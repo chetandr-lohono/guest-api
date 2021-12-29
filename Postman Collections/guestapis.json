@@ -1,0 +1,1343 @@
+{
+  "info": {
+    "_postman_id": "4dace747-1571-4175-abcb-07d27740ef4d",
+    "name": "LohonoGuestAppAPIS",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Login",
+      "item": [
+        {
+          "name": "Login/send OTP - email",
+          "_postman_id": "885793a5-89a0-4a14-ad6d-9a92a4d9ea45",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"login\": \"chetan.d.rane@gmail.com\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{URL}}/v2/login/send_otp"
+          },
+          "response": []
+        },
+        {
+          "name": "Verify OTP - email",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "f8d65e7a-524e-4220-bae2-9d35e6e8b847",
+                "exec": [
+                  "var jsonData = JSON.parse(responseBody);",
+                  "pm.environment.set(\"session-id\", jsonData[\"session_id\"])"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "8ec5d7ac-7458-4437-8685-319241b7c96a",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"login\": \"chetan.d.rane@gmail.com\",\n    \"otp\": \"4195\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{URL}}/v2/login/verify_otp"
+          },
+          "response": []
+        },
+        {
+          "name": "Login/send OTP - mobile",
+          "_postman_id": "4b15d18d-813e-4f39-a983-ea67aef385e6",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"country_code\": \"+91\",\n    \"login\": \"9825690000\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{URL}}/v2/login/send_otp"
+          },
+          "response": []
+        },
+        {
+          "name": "Verify OTP - mobile",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "9b377dbe-cc26-43cc-a65c-eaa8dbb24060",
+                "exec": [
+                  "var jsonData = JSON.parse(responseBody);",
+                  "pm.environment.set(\"session-id\", jsonData[\"session_id\"])"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "cb7e70c7-3194-4d4f-914a-b96eea36671d",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"country_code\": \"+91\",\n    \"login\": \"9825690000\",\n    \"otp\": \"4195\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{URL}}/v2/login/verify_otp"
+          },
+          "response": []
+        }
+      ],
+      "_postman_id": "4cf0a5ca-30e7-4bd6-8f00-1a221d072208"
+    },
+    {
+      "name": "Masters",
+      "item": [
+        {
+          "name": "LocationsCurated",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "25bf14bd-56b8-48d8-88e0-8f31cb7ff65f",
+                "exec": [
+                  "var jsonData = JSON.parse(responseBody);",
+                  "pm.environment.set(\"highligh-slug\", jsonData[\"locations\"][3][\"slug\"])"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "8ee06ac3-308e-459a-a505-240032a444b3",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{URL}}/v2/locations/curated"
+          },
+          "response": []
+        },
+        {
+          "name": "Locations",
+          "_postman_id": "9ead6f3c-d20d-4b36-9d3b-809f5ed2c428",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{URL}}/v2/locations"
+          },
+          "response": []
+        }
+      ],
+      "_postman_id": "df7eee65-ef90-47e2-9970-a269ae217a4e"
+    },
+    {
+      "name": "Properties - India",
+      "item": [
+        {
+          "name": "propertylist for a location",
+          "_postman_id": "93ebbb05-2300-4009-9472-8346931e8aea",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{URL}}/v2/properties?location_slug=india-goa",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "v2",
+                "properties"
+              ],
+              "query": [
+                {
+                  "key": "location_slug",
+                  "value": "india-goa"
+                },
+                {
+                  "key": "trending",
+                  "value": "false",
+                  "description": "[Optional]",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "propertylist curated",
+          "_postman_id": "3ba80fbd-be4b-4d1d-977a-eab1324d1be6",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{URL}}/v2/properties?highlight={{highligh-slug}}",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "v2",
+                "properties"
+              ],
+              "query": [
+                {
+                  "key": "highlight",
+                  "value": "{{highligh-slug}}",
+                  "description": "[Required]"
+                },
+                {
+                  "key": "trending",
+                  "value": "false",
+                  "description": "[Optional]",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "propertylist mood",
+          "_postman_id": "f1cc7b5a-0127-4ef2-b729-cf472432eaf4",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{URL}}/v2/properties?mood=play",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "v2",
+                "properties"
+              ],
+              "query": [
+                {
+                  "key": "mood",
+                  "value": "play",
+                  "description": "[Required]"
+                },
+                {
+                  "key": "trending",
+                  "value": "false",
+                  "description": "[Optional]",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "propertylist - Trending",
+          "_postman_id": "8e4d1617-b0aa-44b2-8b3e-0189429ab112",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{URL}}/v2/properties?trending=true",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "v2",
+                "properties"
+              ],
+              "query": [
+                {
+                  "key": "trending",
+                  "value": "true"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "propertyDetail",
+          "_postman_id": "1b35e665-73d6-4424-aab8-64cb4b880cca",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{URL}}/v2/properties/monforte-vaddo-d"
+          },
+          "response": []
+        },
+        {
+          "name": "propertyDetail - Similar",
+          "_postman_id": "5fccfb99-00db-4489-b061-e8ba222b52c2",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{URL}}/v2/properties/isp-igreha-vaddo-villa-a/similar"
+          },
+          "response": []
+        },
+        {
+          "name": "propertyDetail Coupons",
+          "_postman_id": "a17a9a5b-4646-4a2e-b72b-4431722535a1",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{URL}}/v2/properties/ishanya/coupons"
+          },
+          "response": []
+        },
+        {
+          "name": "property FAQ",
+          "_postman_id": "6d78b582-56e3-46d2-bb91-6eb1ca9de767",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{URL}}/v2/properties/ishanya/faq"
+          },
+          "response": []
+        },
+        {
+          "name": "property Rate and Availibility",
+          "_postman_id": "11a6f59a-16c1-4576-bd9b-73b31885088b",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"coupon_code\" : \"LASTMINUTE\",\n    \"properties\" : [{\n        \"slug\" : \"monforte-vaddo-d\",\n        \"check_in\" : \"07/12/2021\",\n        \"check_out\" : \"15/12/2021\"\n    }]\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{URL}}/v2/properties/rates"
+          },
+          "response": []
+        }
+      ],
+      "_postman_id": "0a84399c-9a6f-45b8-9f7e-21227c284354"
+    },
+    {
+      "name": "Properties - Non Indian",
+      "item": [
+        {
+          "name": "propertylist for a location",
+          "_postman_id": "afe943ee-37df-4432-b05b-32b6a30ce259",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{URL}}/v2/partner_properties?location_slug=thailand-phuket",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "v2",
+                "partner_properties"
+              ],
+              "query": [
+                {
+                  "key": "trending",
+                  "value": "false",
+                  "description": "[Optional]",
+                  "disabled": true
+                },
+                {
+                  "key": "location_slug",
+                  "value": "thailand-phuket"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "propertyDetail",
+          "_postman_id": "7c451100-da94-433a-a34d-0f98065c4cf0",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{URL}}/v2/partner_properties/villa-abiente",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "v2",
+                "partner_properties",
+                "villa-abiente"
+              ],
+              "query": [
+                {
+                  "key": "trending",
+                  "value": "false",
+                  "description": "[Optional]",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "_postman_id": "06bf5c9d-85b4-4663-a029-fb71705ceb5b"
+    },
+    {
+      "name": "Profile",
+      "item": [
+        {
+          "name": "GET Profile",
+          "_postman_id": "f63653d3-8dbb-4f37-8331-f31b87d0674b",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "session",
+                "value": "{{session-id}}",
+                "type": "text"
+              }
+            ],
+            "url": "{{URL}}/v2/user"
+          },
+          "response": []
+        },
+        {
+          "name": "Update Profile",
+          "_postman_id": "248c888b-0a48-434f-83f7-acc20dd4cdb8",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "session",
+                "value": "{{session-id}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\": \"Manthan Damania\",\n    \"country_code\": \"+91\",\n    \"mobile\": \"9004485805\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{URL}}/v2/user"
+          },
+          "response": []
+        }
+      ],
+      "_postman_id": "6926f8c0-7f1e-4ea0-9401-a0d4c10ac20d"
+    },
+    {
+      "name": "Users",
+      "item": [
+        {
+          "name": "favorites [shortlisted] - create",
+          "_postman_id": "43057270-2ddf-46ce-b7b2-48196f860250",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "session",
+                "value": "{{session-id}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"slug\": \"villa-abiente\",\n    \"type\" : \"property\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{URL}}/v2/favorites"
+          },
+          "response": []
+        },
+        {
+          "name": "favorites [shortlisted] - create Partner",
+          "_postman_id": "3616c1de-06ff-45dd-8a9b-89c2266b49b3",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "session",
+                "value": "{{session-id}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"slug\": \"baan-paa-talee-estate\",\n    \"type\" : \"partner_property\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{URL}}/v2/favorites"
+          },
+          "response": []
+        },
+        {
+          "name": "favorites [shortlisted] Delete",
+          "_postman_id": "4a93179c-c4f4-489e-940c-0f8049ae3429",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "session",
+                "value": "{{session-id}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"type\":\"property\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{URL}}/v2/favorites/isp-igreha-vaddo-villa-a"
+          },
+          "response": []
+        },
+        {
+          "name": "favorites [shortlisted]",
+          "_postman_id": "95b99638-e51c-464f-85cd-c4bf681c12a7",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "session",
+                "value": "{{session-id}}",
+                "type": "text"
+              }
+            ],
+            "url": "{{URL}}/v2/favorites"
+          },
+          "response": []
+        },
+        {
+          "name": "Trips",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "d8efe243-2c46-411b-83bb-c9613ad1d96f",
+                "exec": [
+                  "var jsonData = JSON.parse(responseBody);",
+                  "pm.environment.set(\"trips-details-slug\", jsonData.reservations[0][\"slug\"])"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "bb2508ba-6b60-41be-8450-164bf771e994",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "session",
+                "value": "{{session-id}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{URL}}/v2/user/trips?status=pending",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "v2",
+                "user",
+                "trips"
+              ],
+              "query": [
+                {
+                  "key": "status",
+                  "value": "pending",
+                  "description": "pending, confirmed, past"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Trips Details",
+          "_postman_id": "f2e3deb2-60fe-414a-a560-5e24580810cf",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "session",
+                "value": "{{session-id}}",
+                "type": "text"
+              }
+            ],
+            "url": "{{URL}}/v2/user/trips/BB37288A"
+          },
+          "response": []
+        }
+      ],
+      "_postman_id": "f2e9ee9c-6465-469a-9ba4-c14742ba377a"
+    },
+    {
+      "name": "Booking",
+      "item": [
+        {
+          "name": "Booking -Guests Mgmt",
+          "item": [
+            {
+              "name": "Guests",
+              "_postman_id": "87f5e9e9-a047-4be8-a0c2-e71467d4db57",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": "{{URL}}/v2/booking/{{reservation-slug}}/guests"
+              },
+              "response": []
+            },
+            {
+              "name": "Add Guests",
+              "_postman_id": "25cef4d7-b84f-4586-9d6b-adac012a8174",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "session",
+                    "value": "{{session-id}}",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "contact_id",
+                      "value": "",
+                      "type": "text"
+                    },
+                    {
+                      "key": "name",
+                      "value": "Eaka Rane",
+                      "description": "//mandatory",
+                      "type": "text"
+                    },
+                    {
+                      "key": "gender",
+                      "value": "",
+                      "type": "text"
+                    },
+                    {
+                      "key": "dob",
+                      "value": "",
+                      "type": "text"
+                    },
+                    {
+                      "key": "likes",
+                      "value": "",
+                      "type": "text"
+                    },
+                    {
+                      "key": "dislikes",
+                      "value": "",
+                      "type": "text"
+                    },
+                    {
+                      "key": "relative_contact_id",
+                      "value": "",
+                      "type": "text"
+                    },
+                    {
+                      "key": "emails_attrs[][id]",
+                      "value": "",
+                      "type": "text"
+                    },
+                    {
+                      "key": "emails_attrs[][email]",
+                      "value": "",
+                      "type": "text"
+                    },
+                    {
+                      "key": "mobiles_attrs[][id]",
+                      "value": "",
+                      "type": "text"
+                    },
+                    {
+                      "key": "mobiles_attrs[][mobile]",
+                      "value": "",
+                      "type": "text"
+                    },
+                    {
+                      "key": "relationships_attributes[][id]",
+                      "value": "",
+                      "type": "text"
+                    },
+                    {
+                      "key": "relationships_attributes[][relation]",
+                      "value": "",
+                      "type": "text"
+                    },
+                    {
+                      "key": "relationships_attributes[][relative_contact_id]",
+                      "value": "",
+                      "type": "text"
+                    },
+                    {
+                      "key": "documents_attributes[][id]",
+                      "value": "",
+                      "type": "text"
+                    },
+                    {
+                      "key": "documents_attributes[][file]",
+                      "value": "",
+                      "type": "text"
+                    },
+                    {
+                      "key": "documents_attributes[][document_type]",
+                      "value": "Adhaar",
+                      "type": "text"
+                    },
+                    {
+                      "key": "documents_attributes[][document_identifier]",
+                      "value": "adhaar",
+                      "type": "text"
+                    },
+                    {
+                      "key": "documents_attributes[][cloud_path]",
+                      "value": "uploads/rental_property/kt6csbxhog2fmgy4gjw751yi/view-photo.jpg",
+                      "type": "text"
+                    }
+                  ],
+                  "options": {
+                    "formdata": {}
+                  }
+                },
+                "url": "{{URL}}/v2/booking/{{reservation-slug}}/guests"
+              },
+              "response": []
+            },
+            {
+              "name": "Update Guests",
+              "_postman_id": "56b02ddf-8485-4bc2-9801-7ed0b4b059ad",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "session",
+                    "value": "{{session-id}}",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "contact_id",
+                      "value": "",
+                      "type": "text"
+                    },
+                    {
+                      "key": "name",
+                      "value": "Eaka Rane",
+                      "description": "//mandatory",
+                      "type": "text"
+                    },
+                    {
+                      "key": "gender",
+                      "value": "",
+                      "type": "text"
+                    },
+                    {
+                      "key": "dob",
+                      "value": "",
+                      "type": "text"
+                    },
+                    {
+                      "key": "likes",
+                      "value": "",
+                      "type": "text"
+                    },
+                    {
+                      "key": "dislikes",
+                      "value": "",
+                      "type": "text"
+                    },
+                    {
+                      "key": "relative_contact_id",
+                      "value": "",
+                      "type": "text"
+                    },
+                    {
+                      "key": "emails_attrs[][id]",
+                      "value": "",
+                      "type": "text"
+                    },
+                    {
+                      "key": "emails_attrs[][email]",
+                      "value": "",
+                      "type": "text"
+                    },
+                    {
+                      "key": "mobiles_attrs[][id]",
+                      "value": "",
+                      "type": "text"
+                    },
+                    {
+                      "key": "mobiles_attrs[][mobile]",
+                      "value": "",
+                      "type": "text"
+                    },
+                    {
+                      "key": "relationships_attributes[][id]",
+                      "value": "",
+                      "type": "text"
+                    },
+                    {
+                      "key": "relationships_attributes[][relation]",
+                      "value": "",
+                      "type": "text"
+                    },
+                    {
+                      "key": "relationships_attributes[][relative_contact_id]",
+                      "value": "",
+                      "type": "text"
+                    },
+                    {
+                      "key": "documents_attributes[][id]",
+                      "value": "",
+                      "type": "text"
+                    },
+                    {
+                      "key": "documents_attributes[][file]",
+                      "value": "",
+                      "type": "text"
+                    },
+                    {
+                      "key": "documents_attributes[][document_type]",
+                      "value": "Adhaar",
+                      "type": "text"
+                    },
+                    {
+                      "key": "documents_attributes[][document_identifier]",
+                      "value": "adhaar",
+                      "type": "text"
+                    },
+                    {
+                      "key": "documents_attributes[][cloud_path]",
+                      "value": "uploads/rental_property/kt6csbxhog2fmgy4gjw751yi/view-photo.jpg",
+                      "type": "text"
+                    }
+                  ],
+                  "options": {
+                    "formdata": {}
+                  }
+                },
+                "url": "{{URL}}/v2/booking/{{reservation-slug}}/guests"
+              },
+              "response": []
+            },
+            {
+              "name": "Update Guests",
+              "_postman_id": "d88e7bfc-1725-4ee5-858d-b0ac84f14432",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "PATCH",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "opportunity_id",
+                      "value": "",
+                      "type": "text"
+                    },
+                    {
+                      "key": "id",
+                      "value": "",
+                      "description": "//mandatory",
+                      "type": "text"
+                    },
+                    {
+                      "key": "name",
+                      "value": "",
+                      "description": "//mandatory",
+                      "type": "text"
+                    },
+                    {
+                      "key": "gender",
+                      "value": "",
+                      "type": "text"
+                    },
+                    {
+                      "key": "dob",
+                      "value": "",
+                      "type": "text"
+                    },
+                    {
+                      "key": "likes",
+                      "value": "",
+                      "type": "text"
+                    },
+                    {
+                      "key": "dislikes",
+                      "value": "",
+                      "type": "text"
+                    },
+                    {
+                      "key": "emails_attrs[][id]",
+                      "value": "",
+                      "type": "text"
+                    },
+                    {
+                      "key": "emails_attrs[][email]",
+                      "value": "",
+                      "type": "text"
+                    },
+                    {
+                      "key": "mobiles_attrs[][id]",
+                      "value": "",
+                      "type": "text"
+                    },
+                    {
+                      "key": "mobiles_attrs[][mobile]",
+                      "value": "",
+                      "type": "text"
+                    },
+                    {
+                      "key": "relationships_attributes[][id]",
+                      "value": "",
+                      "type": "text"
+                    },
+                    {
+                      "key": "relationships_attributes[][relation]",
+                      "value": "",
+                      "type": "text"
+                    },
+                    {
+                      "key": "relationships_attributes[][relative_contact_id]",
+                      "value": "",
+                      "type": "text"
+                    },
+                    {
+                      "key": "documents_attributes[][id]",
+                      "value": "",
+                      "type": "text"
+                    },
+                    {
+                      "key": "documents_attributes[][file]",
+                      "value": "",
+                      "type": "text"
+                    },
+                    {
+                      "key": "documents_attributes[][document_type]",
+                      "value": "",
+                      "type": "text"
+                    },
+                    {
+                      "key": "documents_attributes[][document_identifier]",
+                      "value": "",
+                      "type": "text"
+                    }
+                  ],
+                  "options": {
+                    "formdata": {}
+                  }
+                },
+                "url": "{{domain}}/api/v2/rental/opportunities/{opportunity_id}/guests/{id}"
+              },
+              "response": []
+            },
+            {
+              "name": "Delete Guests",
+              "_postman_id": "1c29ad1b-cb2e-412f-b8d1-53051345254a",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": "{{domain}}/api/v2/rental/opportunities/{opportunity_id}/guests/{id}"
+              },
+              "response": []
+            },
+            {
+              "name": "PreSignedURL",
+              "event": [
+                {
+                  "listen": "test",
+                  "script": {
+                    "id": "b00ec9b7-a3a9-44a2-b00b-47dfdc641752",
+                    "exec": [
+                      "var jsonData = JSON.parse(responseBody);",
+                      "pm.environment.set(\"presigned-url\", jsonData[\"url\"])",
+                      "pm.environment.set(\"s3-key\", jsonData[\"url_fields\"][\"key\"])",
+                      "pm.environment.set(\"s3-acl\", jsonData[\"url_fields\"][\"acl\"])",
+                      "pm.environment.set(\"aws-s3-policy\", jsonData[\"url_fields\"][\"policy\"])",
+                      "pm.environment.set(\"x-amz-meta-original-filename\", jsonData[\"url_fields\"][\"x-amz-meta-original-filename\"])",
+                      "pm.environment.set(\"x-amz-credential\", jsonData[\"url_fields\"][\"x-amz-credential\"])",
+                      "pm.environment.set(\"x-amz-algorithm\", jsonData[\"url_fields\"][\"x-amz-algorithm\"])",
+                      "pm.environment.set(\"x-amz-date\", jsonData[\"url_fields\"][\"x-amz-date\"])",
+                      "pm.environment.set(\"x-amz-signature\", jsonData[\"url_fields\"][\"x-amz-signature\"])",
+                      ""
+                    ],
+                    "type": "text/javascript"
+                  }
+                }
+              ],
+              "_postman_id": "ca755d7d-951f-47f4-a821-dd84779331ce",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "session",
+                    "value": "{{session-id}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "key",
+                    "value": "{{aws-key}}",
+                    "type": "text",
+                    "disabled": true
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"file_name\" :\"view-photo.jpg\",\n    \"md5\": \"4b196e6806073d1162d551fbe8f29276\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": "{{URL}}/v2/documents/presignedurl"
+              },
+              "response": []
+            },
+            {
+              "name": "UploadFile",
+              "event": [
+                {
+                  "listen": "test",
+                  "script": {
+                    "id": "c2ba20a8-d810-4260-a3d4-54056e73b617",
+                    "exec": [
+                      ""
+                    ],
+                    "type": "text/javascript"
+                  }
+                }
+              ],
+              "_postman_id": "4054dc34-0943-4929-9dce-a49a209a28f8",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true,
+                "disabledSystemHeaders": {}
+              },
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "session",
+                    "value": "{{session-id}}",
+                    "type": "text",
+                    "disabled": true
+                  },
+                  {
+                    "key": "x-amz-content-sha256",
+                    "value": "{{x-amz-signature}}",
+                    "type": "text",
+                    "disabled": true
+                  }
+                ],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "key",
+                      "value": "{{s3-key}}",
+                      "type": "text"
+                    },
+                    {
+                      "key": "x-amz-meta-original-filename",
+                      "value": "{{x-amz-meta-original-filename}}",
+                      "type": "text"
+                    },
+                    {
+                      "key": "policy",
+                      "value": "{{aws-s3-policy}}",
+                      "type": "text"
+                    },
+                    {
+                      "key": "x-amz-credential",
+                      "value": "{{x-amz-credential}}",
+                      "type": "text"
+                    },
+                    {
+                      "key": "x-amz-algorithm",
+                      "value": "{{x-amz-algorithm}}",
+                      "type": "text"
+                    },
+                    {
+                      "key": "x-amz-date",
+                      "value": "{{x-amz-date}}",
+                      "type": "text"
+                    },
+                    {
+                      "key": "x-amz-signature",
+                      "value": "{{x-amz-signature}}",
+                      "type": "text"
+                    },
+                    {
+                      "key": "file",
+                      "type": "file",
+                      "src": "/Users/chetan/Downloads/view-photo.jpg"
+                    }
+                  ],
+                  "options": {
+                    "formdata": {}
+                  }
+                },
+                "url": "{{presigned-url}}"
+              },
+              "response": []
+            }
+          ],
+          "_postman_id": "7996dbe9-4205-421f-8889-cf095c0b5d4a",
+          "_postman_isSubFolder": true
+        },
+        {
+          "name": "Booking Create",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "8df265ef-3dcc-4831-9e58-166fbb23610e",
+                "exec": [
+                  "var jsonData = JSON.parse(responseBody);",
+                  "pm.environment.set(\"reservation-slug\", jsonData[\"slug\"])"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "45c787d2-ac78-4785-9fe8-d784df270111",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "session",
+                "value": "{{session-id}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"property_slug\" : \"monforte-vaddo-f\",\n    \"name\" : \"Chetan Rane\",\n    \"billing_email\" : \"chetan.d.rane@gmail.com\",\n    \"country_code\" : \"91\",\n    \"billing_mobile\" : \"9999999991\",\n    \"check_in\" : \"2022/01/08\",\n    \"check_out\": \"2022/01/09\",\n    \"adults\" : 2,\n    \"children\" : 2,\n    \"customer_note\":\"This Note is special\",\n    \"coupon_code\":\"\",\n    \"meta\" :{},\n    \"gift_cards\":\"\",\n    \"brand_id\": \"\",\n    \"property_config_id\":\"\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{URL}}/v2/booking"
+          },
+          "response": []
+        },
+        {
+          "name": "Booking get",
+          "_postman_id": "85c11a50-184f-4566-95ba-f734620d7d04",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{URL}}/v2/booking/BB37288A"
+          },
+          "response": []
+        },
+        {
+          "name": "Booking confirm",
+          "_postman_id": "0abbedd4-6e92-4dc8-adf0-63f12a62f91f",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"razorpay_payment_id\": \"pay_29QQoUBi66xm2f\",\n  \"razorpay_order_id\": \"order_9A33XWu170gUtm\",\n  \"razorpay_signature\": \"9ef4dffbfd84f1318f6739a3ce19f9d85851857ae648f114332d8401e0949a3d\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{URL}}/v2/booking/confirm"
+          },
+          "response": []
+        }
+      ],
+      "_postman_id": "9282c10b-6eb6-438f-8209-d904bb7178a3"
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ],
+        "id": "1ee367bc-6ee2-4211-a53d-124c76f4bfb5"
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ],
+        "id": "45eef0c5-48c6-45e1-9cd4-22ad80074128"
+      }
+    }
+  ],
+  "variable": [
+    {
+      "id": "9339ca40-5c12-4c61-811f-4c8fbac6f0fb",
+      "key": "URL",
+      "value": "http://localhost:3000",
+      "type": "string"
+    }
+  ]
+}

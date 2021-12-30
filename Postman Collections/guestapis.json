@@ -662,25 +662,6 @@
           "response": []
         },
         {
-          "name": "Trips Details",
-          "id": "f2e3deb2-60fe-414a-a560-5e24580810cf",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "method": "GET",
-            "header": [
-              {
-                "key": "session",
-                "value": "{{session-id}}",
-                "type": "text"
-              }
-            ],
-            "url": "{{URL}}/v2/user/trips/BB37288A"
-          },
-          "response": []
-        },
-        {
           "name": "Trips Copy",
           "event": [
             {
@@ -726,6 +707,25 @@
                 }
               ]
             }
+          },
+          "response": []
+        },
+        {
+          "name": "Trips Details",
+          "id": "f2e3deb2-60fe-414a-a560-5e24580810cf",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "session",
+                "value": "{{session-id}}",
+                "type": "text"
+              }
+            ],
+            "url": "{{URL}}/v2/user/trips/BB37288A"
           },
           "response": []
         }
@@ -1370,7 +1370,7 @@
   ],
   "variable": [
     {
-      "id": "6dfa3753-f20f-43b6-a654-316233611719",
+      "id": "cf7de8c0-1ced-4ae0-a3fe-15e84cdb9cf9",
       "key": "URL",
       "value": "http://localhost:3000"
     }

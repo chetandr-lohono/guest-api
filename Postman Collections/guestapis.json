@@ -10,7 +10,7 @@
       "item": [
         {
           "name": "Login/send OTP - email",
-          "_postman_id": "885793a5-89a0-4a14-ad6d-9a92a4d9ea45",
+          "id": "885793a5-89a0-4a14-ad6d-9a92a4d9ea45",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -45,7 +45,7 @@
               }
             }
           ],
-          "_postman_id": "8ec5d7ac-7458-4437-8685-319241b7c96a",
+          "id": "8ec5d7ac-7458-4437-8685-319241b7c96a",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -67,7 +67,7 @@
         },
         {
           "name": "Login/send OTP - mobile",
-          "_postman_id": "4b15d18d-813e-4f39-a983-ea67aef385e6",
+          "id": "4b15d18d-813e-4f39-a983-ea67aef385e6",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -102,7 +102,7 @@
               }
             }
           ],
-          "_postman_id": "cb7e70c7-3194-4d4f-914a-b96eea36671d",
+          "id": "cb7e70c7-3194-4d4f-914a-b96eea36671d",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -123,7 +123,7 @@
           "response": []
         }
       ],
-      "_postman_id": "4cf0a5ca-30e7-4bd6-8f00-1a221d072208"
+      "id": "4cf0a5ca-30e7-4bd6-8f00-1a221d072208"
     },
     {
       "name": "Masters",
@@ -143,7 +143,7 @@
               }
             }
           ],
-          "_postman_id": "8ee06ac3-308e-459a-a505-240032a444b3",
+          "id": "8ee06ac3-308e-459a-a505-240032a444b3",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -156,7 +156,7 @@
         },
         {
           "name": "Locations",
-          "_postman_id": "9ead6f3c-d20d-4b36-9d3b-809f5ed2c428",
+          "id": "9ead6f3c-d20d-4b36-9d3b-809f5ed2c428",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -168,14 +168,14 @@
           "response": []
         }
       ],
-      "_postman_id": "df7eee65-ef90-47e2-9970-a269ae217a4e"
+      "id": "df7eee65-ef90-47e2-9970-a269ae217a4e"
     },
     {
       "name": "Properties - India",
       "item": [
         {
           "name": "propertylist for a location",
-          "_postman_id": "93ebbb05-2300-4009-9472-8346931e8aea",
+          "id": "93ebbb05-2300-4009-9472-8346931e8aea",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -209,7 +209,7 @@
         },
         {
           "name": "propertylist curated",
-          "_postman_id": "3ba80fbd-be4b-4d1d-977a-eab1324d1be6",
+          "id": "3ba80fbd-be4b-4d1d-977a-eab1324d1be6",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -244,7 +244,7 @@
         },
         {
           "name": "propertylist mood",
-          "_postman_id": "f1cc7b5a-0127-4ef2-b729-cf472432eaf4",
+          "id": "f1cc7b5a-0127-4ef2-b729-cf472432eaf4",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -279,7 +279,7 @@
         },
         {
           "name": "propertylist - Trending",
-          "_postman_id": "8e4d1617-b0aa-44b2-8b3e-0189429ab112",
+          "id": "8e4d1617-b0aa-44b2-8b3e-0189429ab112",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -307,7 +307,7 @@
         },
         {
           "name": "propertyDetail",
-          "_postman_id": "1b35e665-73d6-4424-aab8-64cb4b880cca",
+          "id": "1b35e665-73d6-4424-aab8-64cb4b880cca",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -320,7 +320,7 @@
         },
         {
           "name": "propertyDetail - Similar",
-          "_postman_id": "5fccfb99-00db-4489-b061-e8ba222b52c2",
+          "id": "5fccfb99-00db-4489-b061-e8ba222b52c2",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -333,7 +333,7 @@
         },
         {
           "name": "propertyDetail Coupons",
-          "_postman_id": "a17a9a5b-4646-4a2e-b72b-4431722535a1",
+          "id": "a17a9a5b-4646-4a2e-b72b-4431722535a1",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -346,7 +346,7 @@
         },
         {
           "name": "property FAQ",
-          "_postman_id": "6d78b582-56e3-46d2-bb91-6eb1ca9de767",
+          "id": "6d78b582-56e3-46d2-bb91-6eb1ca9de767",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -359,7 +359,7 @@
         },
         {
           "name": "property Rate and Availibility",
-          "_postman_id": "11a6f59a-16c1-4576-bd9b-73b31885088b",
+          "id": "11a6f59a-16c1-4576-bd9b-73b31885088b",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -380,14 +380,14 @@
           "response": []
         }
       ],
-      "_postman_id": "0a84399c-9a6f-45b8-9f7e-21227c284354"
+      "id": "0a84399c-9a6f-45b8-9f7e-21227c284354"
     },
     {
       "name": "Properties - Non Indian",
       "item": [
         {
           "name": "propertylist for a location",
-          "_postman_id": "afe943ee-37df-4432-b05b-32b6a30ce259",
+          "id": "afe943ee-37df-4432-b05b-32b6a30ce259",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -421,7 +421,7 @@
         },
         {
           "name": "propertyDetail",
-          "_postman_id": "7c451100-da94-433a-a34d-0f98065c4cf0",
+          "id": "7c451100-da94-433a-a34d-0f98065c4cf0",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -451,14 +451,14 @@
           "response": []
         }
       ],
-      "_postman_id": "06bf5c9d-85b4-4663-a029-fb71705ceb5b"
+      "id": "06bf5c9d-85b4-4663-a029-fb71705ceb5b"
     },
     {
       "name": "Profile",
       "item": [
         {
           "name": "GET Profile",
-          "_postman_id": "f63653d3-8dbb-4f37-8331-f31b87d0674b",
+          "id": "f63653d3-8dbb-4f37-8331-f31b87d0674b",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -477,7 +477,7 @@
         },
         {
           "name": "Update Profile",
-          "_postman_id": "248c888b-0a48-434f-83f7-acc20dd4cdb8",
+          "id": "248c888b-0a48-434f-83f7-acc20dd4cdb8",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -504,14 +504,14 @@
           "response": []
         }
       ],
-      "_postman_id": "6926f8c0-7f1e-4ea0-9401-a0d4c10ac20d"
+      "id": "6926f8c0-7f1e-4ea0-9401-a0d4c10ac20d"
     },
     {
       "name": "Users",
       "item": [
         {
           "name": "favorites [shortlisted] - create",
-          "_postman_id": "43057270-2ddf-46ce-b7b2-48196f860250",
+          "id": "43057270-2ddf-46ce-b7b2-48196f860250",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -539,7 +539,7 @@
         },
         {
           "name": "favorites [shortlisted] - create Partner",
-          "_postman_id": "3616c1de-06ff-45dd-8a9b-89c2266b49b3",
+          "id": "3616c1de-06ff-45dd-8a9b-89c2266b49b3",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -567,7 +567,7 @@
         },
         {
           "name": "favorites [shortlisted] Delete",
-          "_postman_id": "4a93179c-c4f4-489e-940c-0f8049ae3429",
+          "id": "4a93179c-c4f4-489e-940c-0f8049ae3429",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -595,7 +595,7 @@
         },
         {
           "name": "favorites [shortlisted]",
-          "_postman_id": "95b99638-e51c-464f-85cd-c4bf681c12a7",
+          "id": "95b99638-e51c-464f-85cd-c4bf681c12a7",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -627,7 +627,7 @@
               }
             }
           ],
-          "_postman_id": "bb2508ba-6b60-41be-8450-164bf771e994",
+          "id": "bb2508ba-6b60-41be-8450-164bf771e994",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -663,7 +663,7 @@
         },
         {
           "name": "Trips Details",
-          "_postman_id": "f2e3deb2-60fe-414a-a560-5e24580810cf",
+          "id": "f2e3deb2-60fe-414a-a560-5e24580810cf",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -679,9 +679,58 @@
             "url": "{{URL}}/v2/user/trips/BB37288A"
           },
           "response": []
+        },
+        {
+          "name": "Trips Copy",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "1c4407b7-e360-476b-95a8-b8384ffdc40b",
+                "exec": [
+                  "var jsonData = JSON.parse(responseBody);",
+                  "pm.environment.set(\"trips-details-slug\", jsonData.reservations[0][\"slug\"])"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "id": "54c1f439-4f25-4736-8c59-fc2233ee6215",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "session",
+                "value": "{{session-id}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{URL}}/v2/user/trips?status=pending",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "v2",
+                "user",
+                "trips"
+              ],
+              "query": [
+                {
+                  "key": "status",
+                  "value": "pending",
+                  "description": "pending, confirmed, past"
+                }
+              ]
+            }
+          },
+          "response": []
         }
       ],
-      "_postman_id": "f2e9ee9c-6465-469a-9ba4-c14742ba377a"
+      "id": "f2e9ee9c-6465-469a-9ba4-c14742ba377a"
     },
     {
       "name": "Booking",
@@ -691,7 +740,7 @@
           "item": [
             {
               "name": "Guests",
-              "_postman_id": "87f5e9e9-a047-4be8-a0c2-e71467d4db57",
+              "id": "87f5e9e9-a047-4be8-a0c2-e71467d4db57",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -704,7 +753,7 @@
             },
             {
               "name": "Add Guests",
-              "_postman_id": "25cef4d7-b84f-4586-9d6b-adac012a8174",
+              "id": "25cef4d7-b84f-4586-9d6b-adac012a8174",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -816,10 +865,7 @@
                       "value": "uploads/rental_property/kt6csbxhog2fmgy4gjw751yi/view-photo.jpg",
                       "type": "text"
                     }
-                  ],
-                  "options": {
-                    "formdata": {}
-                  }
+                  ]
                 },
                 "url": "{{URL}}/v2/booking/{{reservation-slug}}/guests"
               },
@@ -827,7 +873,7 @@
             },
             {
               "name": "Update Guests",
-              "_postman_id": "56b02ddf-8485-4bc2-9801-7ed0b4b059ad",
+              "id": "56b02ddf-8485-4bc2-9801-7ed0b4b059ad",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -939,10 +985,7 @@
                       "value": "uploads/rental_property/kt6csbxhog2fmgy4gjw751yi/view-photo.jpg",
                       "type": "text"
                     }
-                  ],
-                  "options": {
-                    "formdata": {}
-                  }
+                  ]
                 },
                 "url": "{{URL}}/v2/booking/{{reservation-slug}}/guests"
               },
@@ -950,7 +993,7 @@
             },
             {
               "name": "Update Guests",
-              "_postman_id": "d88e7bfc-1725-4ee5-858d-b0ac84f14432",
+              "id": "d88e7bfc-1725-4ee5-858d-b0ac84f14432",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -1052,10 +1095,7 @@
                       "value": "",
                       "type": "text"
                     }
-                  ],
-                  "options": {
-                    "formdata": {}
-                  }
+                  ]
                 },
                 "url": "{{domain}}/api/v2/rental/opportunities/{opportunity_id}/guests/{id}"
               },
@@ -1063,7 +1103,7 @@
             },
             {
               "name": "Delete Guests",
-              "_postman_id": "1c29ad1b-cb2e-412f-b8d1-53051345254a",
+              "id": "1c29ad1b-cb2e-412f-b8d1-53051345254a",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -1098,7 +1138,7 @@
                   }
                 }
               ],
-              "_postman_id": "ca755d7d-951f-47f4-a821-dd84779331ce",
+              "id": "ca755d7d-951f-47f4-a821-dd84779331ce",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -1144,7 +1184,7 @@
                   }
                 }
               ],
-              "_postman_id": "4054dc34-0943-4929-9dce-a49a209a28f8",
+              "id": "4054dc34-0943-4929-9dce-a49a209a28f8",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true,
                 "disabledSystemHeaders": {}
@@ -1208,18 +1248,14 @@
                       "type": "file",
                       "src": "/Users/chetan/Downloads/view-photo.jpg"
                     }
-                  ],
-                  "options": {
-                    "formdata": {}
-                  }
+                  ]
                 },
                 "url": "{{presigned-url}}"
               },
               "response": []
             }
           ],
-          "_postman_id": "7996dbe9-4205-421f-8889-cf095c0b5d4a",
-          "_postman_isSubFolder": true
+          "id": "7996dbe9-4205-421f-8889-cf095c0b5d4a"
         },
         {
           "name": "Booking Create",
@@ -1236,7 +1272,7 @@
               }
             }
           ],
-          "_postman_id": "45c787d2-ac78-4785-9fe8-d784df270111",
+          "id": "45c787d2-ac78-4785-9fe8-d784df270111",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -1264,7 +1300,7 @@
         },
         {
           "name": "Booking get",
-          "_postman_id": "85c11a50-184f-4566-95ba-f734620d7d04",
+          "id": "85c11a50-184f-4566-95ba-f734620d7d04",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -1286,7 +1322,7 @@
         },
         {
           "name": "Booking confirm",
-          "_postman_id": "0abbedd4-6e92-4dc8-adf0-63f12a62f91f",
+          "id": "0abbedd4-6e92-4dc8-adf0-63f12a62f91f",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -1307,7 +1343,7 @@
           "response": []
         }
       ],
-      "_postman_id": "9282c10b-6eb6-438f-8209-d904bb7178a3"
+      "id": "9282c10b-6eb6-438f-8209-d904bb7178a3"
     }
   ],
   "event": [
@@ -1334,10 +1370,9 @@
   ],
   "variable": [
     {
-      "id": "9339ca40-5c12-4c61-811f-4c8fbac6f0fb",
+      "id": "6dfa3753-f20f-43b6-a654-316233611719",
       "key": "URL",
-      "value": "http://localhost:3000",
-      "type": "string"
+      "value": "http://localhost:3000"
     }
   ]
 }

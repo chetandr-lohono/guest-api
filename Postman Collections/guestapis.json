@@ -694,7 +694,7 @@
           "response": []
         },
         {
-          "name": "Trips Delete Copy",
+          "name": "Logout",
           "event": [
             {
               "listen": "test",
@@ -1385,7 +1385,7 @@
   ],
   "variable": [
     {
-      "id": "7bb00a9c-cb9e-44c3-958e-f6066ba0601c",
+      "id": "185518d1-47f4-4e2c-8c06-d3f1a689ef2d",
       "key": "URL",
       "value": "http://localhost:3000"
     }

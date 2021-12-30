@@ -711,6 +711,38 @@
             "url": "{{URL}}/v2/user/trips/BB37288A"
           },
           "response": []
+        },
+        {
+          "name": "Trips Delete Copy",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "a18d6566-2665-4456-b7d0-441af03a1502",
+                "exec": [
+                  "var jsonData = JSON.parse(responseBody);",
+                  "pm.environment.set(\"trips-details-slug\", jsonData.reservations[0][\"slug\"])"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "id": "07e7ea34-c3f1-40e5-9e04-a9e09e4875df",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "session",
+                "value": "{{session-id}}",
+                "type": "text"
+              }
+            ],
+            "url": "{{URL}}/v2/user/trips/BCBA6E5A"
+          },
+          "response": []
         }
       ],
       "id": "f2e9ee9c-6465-469a-9ba4-c14742ba377a"
@@ -1353,7 +1385,7 @@
   ],
   "variable": [
     {
-      "id": "47cbf814-7c87-4a61-8bdd-54854bf200ec",
+      "id": "bdfbf35c-3f37-4c77-8bde-a838376ef789",
       "key": "URL",
       "value": "http://localhost:3000"
     }

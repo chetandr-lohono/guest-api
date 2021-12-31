@@ -65,13 +65,15 @@
                   "})",
                   "",
                   "pm.test(\"Test if there are no errors in the verify OTP\", function() {",
-                  "    jsonData = pm.response.json();",
                   "    pm.expect(jsonData.meta.error).to.equal(false)",
                   "})",
                   "",
                   "pm.test(\"check if user data exists\", function() {",
-                  "    jsonData = pm.response.json();",
                   "    pm.expect(jsonData).to.have.property(\"user\")",
+                  "})",
+                  "",
+                  "pm.test(\"check if session_id exists\", function() {",
+                  "    pm.expect(jsonData).to.have.property(\"session_id\")",
                   "})",
                   "",
                   ""
@@ -1453,7 +1455,7 @@
   ],
   "variable": [
     {
-      "id": "622db98f-c2de-4812-83cb-c77d2d9a886c",
+      "id": "65119e14-5ddc-439d-81b7-c24dff6d3aae",
       "key": "URL",
       "value": "http://localhost:3000"
     }

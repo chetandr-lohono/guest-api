@@ -21,7 +21,7 @@
                   "})",
                   "",
                   "pm.test(\"Test if there are no errors in the Send OTP\", function() {",
-                  "    jsonData = JSON.parse(pm.response);",
+                  "    jsonData = pm.response;",
                   "    console.log(jsonData);",
                   "    jsonData.meta.error.to.equal(false)",
                   "",
@@ -1439,7 +1439,7 @@
   ],
   "variable": [
     {
-      "id": "29cb18ea-e51b-4613-a3df-e72042704c8b",
+      "id": "35f91171-b7e6-432b-8db4-465e48dea18f",
       "key": "URL",
       "value": "http://localhost:3000"
     }

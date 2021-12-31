@@ -1147,6 +1147,9 @@
                       "pm.environment.set(\"x-amz-algorithm\", jsonData[\"url_fields\"][\"x-amz-algorithm\"])",
                       "pm.environment.set(\"x-amz-date\", jsonData[\"url_fields\"][\"x-amz-date\"])",
                       "pm.environment.set(\"x-amz-signature\", jsonData[\"url_fields\"][\"x-amz-signature\"])",
+                      "pm.environment.set(\"aws-success_action_status\", jsonData[\"url_fields\"][\"success_action_status\"])",
+                      "",
+                      "",
                       ""
                     ],
                     "type": "text/javascript"
@@ -1174,7 +1177,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n    \"file_name\" :\"view-photo.jpg\",\n    \"md5\": \"4b196e6806073d1162d551fbe8f29276\"\n}",
+                  "raw": "{\n    \"file_name\" :\"view-photo.jpg\"\n}",
                   "options": {
                     "raw": {
                       "language": "json"
@@ -1410,7 +1413,7 @@
   ],
   "variable": [
     {
-      "id": "afe6153c-311e-4921-99be-35e4b2184e18",
+      "id": "8d06d297-4f3f-4a10-ab16-48600d032079",
       "key": "URL",
       "value": "http://localhost:3000"
     }

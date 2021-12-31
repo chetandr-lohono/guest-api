@@ -77,7 +77,7 @@
                   "})",
                   "",
                   "pm.test(\"check if user has all required keys\", function() {",
-                  "    pm.expect(jsonData.user).to.have.all.keys(\"name\",\"email\",\"country_code\", \"mobile\", \"email_verified\", \"mobile_verified\")",
+                  "    pm.expect(jsonData.user).to.have.all.keys(\"name\",\"email\",\"count_code\", \"mobile\", \"email_verified\", \"mobile_verified\")",
                   "})",
                   "",
                   ""
@@ -1459,7 +1459,7 @@
   ],
   "variable": [
     {
-      "id": "31d25277-befa-430a-b683-b5a43b37af92",
+      "id": "e4d7f96a-4261-46cb-8afc-1d996064fcec",
       "key": "URL",
       "value": "http://localhost:3000"
     }

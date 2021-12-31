@@ -1265,6 +1265,11 @@
                       "key": "file",
                       "type": "file",
                       "src": "/Users/chetan/Downloads/view-photo.jpg"
+                    },
+                    {
+                      "key": "success_action_status",
+                      "value": "{{aws-success_action_status}}",
+                      "type": "text"
                     }
                   ]
                 },
@@ -1413,7 +1418,7 @@
   ],
   "variable": [
     {
-      "id": "8d06d297-4f3f-4a10-ab16-48600d032079",
+      "id": "a77bdfa2-eaa2-4dfa-8a02-33e6686a7c00",
       "key": "URL",
       "value": "http://localhost:3000"
     }

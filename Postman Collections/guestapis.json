@@ -10,6 +10,26 @@
       "item": [
         {
           "name": "Login/send OTP - email",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "ff61bdff-abb6-4a14-8f7e-598b1314741f",
+                "exec": [
+                  "pm.test(\"Test the response is OK\", function() {",
+                  "    pm.response.to.have.status(200);",
+                  "})",
+                  "",
+                  "pm.test(\"Test if there are no errors in the Send OTP\", function() {",
+                  "    jsonData = JSON.parse(pm.response);",
+                  "    jsonData.meta.error.to.equal(false)",
+                  "",
+                  "})"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
           "id": "885793a5-89a0-4a14-ad6d-9a92a4d9ea45",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -1418,7 +1438,7 @@
   ],
   "variable": [
     {
-      "id": "a77bdfa2-eaa2-4dfa-8a02-33e6686a7c00",
+      "id": "e5efc6ae-fa4c-4c9e-830a-b7c5d2979334",
       "key": "URL",
       "value": "http://localhost:3000"
     }

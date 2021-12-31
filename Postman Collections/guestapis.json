@@ -57,8 +57,17 @@
               "script": {
                 "id": "f8d65e7a-524e-4220-bae2-9d35e6e8b847",
                 "exec": [
-                  "var jsonData = JSON.parse(responseBody);",
-                  "pm.environment.set(\"session-id\", jsonData[\"session_id\"])"
+                  "var jsonData = pm.response.json();",
+                  "pm.environment.set(\"session-id\", jsonData[\"session_id\"])",
+                  "",
+                  "pm.test(\"Test the response is OK for verify OTP\", function() {",
+                  "    pm.response.to.have.status(200);",
+                  "})",
+                  "",
+                  "pm.test(\"Test if there are no errors in the verify OTP\", function() {",
+                  "    jsonData = pm.response.json();",
+                  "    pm.expect(jsonData.meta.error).to.equal(false)",
+                  "})"
                 ],
                 "type": "text/javascript"
               }
@@ -1437,7 +1446,7 @@
   ],
   "variable": [
     {
-      "id": "99ee0726-41ca-4d52-8a30-5789b87af328",
+      "id": "75cfb939-1d67-434b-97de-11fd44689f97",
       "key": "URL",
       "value": "http://localhost:3000"
     }

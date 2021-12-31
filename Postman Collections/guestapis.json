@@ -76,6 +76,10 @@
                   "    pm.expect(jsonData).to.have.property(\"session_id\")",
                   "})",
                   "",
+                  "pm.test(\"check if user has all required keys\", function() {",
+                  "    pm.expect(jsonData.user).to.have.all.keys(\"name\",\"email\",\"country_code\", \"mobile\", \"email_verified\", \"mobile_verified\")",
+                  "})",
+                  "",
                   ""
                 ],
                 "type": "text/javascript"
@@ -1455,7 +1459,7 @@
   ],
   "variable": [
     {
-      "id": "65119e14-5ddc-439d-81b7-c24dff6d3aae",
+      "id": "31d25277-befa-430a-b683-b5a43b37af92",
       "key": "URL",
       "value": "http://localhost:3000"
     }

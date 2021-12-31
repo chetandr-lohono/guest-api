@@ -67,7 +67,14 @@
                   "pm.test(\"Test if there are no errors in the verify OTP\", function() {",
                   "    jsonData = pm.response.json();",
                   "    pm.expect(jsonData.meta.error).to.equal(false)",
-                  "})"
+                  "})",
+                  "",
+                  "pm.test(\"check if user data exists\", function() {",
+                  "    jsonData = pm.response.json();",
+                  "    pm.expect(jsonData).to.have.property(\"user\")",
+                  "})",
+                  "",
+                  ""
                 ],
                 "type": "text/javascript"
               }
@@ -1446,7 +1453,7 @@
   ],
   "variable": [
     {
-      "id": "75cfb939-1d67-434b-97de-11fd44689f97",
+      "id": "622db98f-c2de-4812-83cb-c77d2d9a886c",
       "key": "URL",
       "value": "http://localhost:3000"
     }

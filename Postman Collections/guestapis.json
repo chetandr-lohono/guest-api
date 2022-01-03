@@ -1413,7 +1413,7 @@
       "name": "Calendar",
       "item": [
         {
-          "name": "GET Profile",
+          "name": "GET Calendar",
           "id": "084dde73-632f-4f6c-825e-78227c6069ea",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -1459,7 +1459,7 @@
   ],
   "variable": [
     {
-      "id": "c262bad0-4919-4c06-98f9-e312f3763f7c",
+      "id": "7b6ad9ea-bfdd-4ce1-8cfd-1cb7aa92b436",
       "key": "URL",
       "value": "http://localhost:3000"
     }

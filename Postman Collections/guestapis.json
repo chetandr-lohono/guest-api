@@ -207,6 +207,19 @@
             "url": "{{URL}}/v2/locations"
           },
           "response": []
+        },
+        {
+          "name": "Locations Copy",
+          "id": "d297ec9e-7e4d-4dae-8d18-90209ade41ae",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{URL}}/v2/locations"
+          },
+          "response": []
         }
       ],
       "id": "df7eee65-ef90-47e2-9970-a269ae217a4e"
@@ -1500,7 +1513,7 @@
   ],
   "variable": [
     {
-      "id": "d375f0a5-7826-4eb6-9b1b-cd353a9d466c",
+      "id": "8703a240-6173-40ef-b5f6-1016ba46df78",
       "key": "URL",
       "value": "http://localhost:3000"
     }

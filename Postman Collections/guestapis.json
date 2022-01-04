@@ -429,7 +429,36 @@
           "request": {
             "method": "GET",
             "header": [],
-            "url": null
+            "url": {
+              "raw": "{{URL}}/v2/properties/:slug/calendar?start_date=2022-01-04&end_date=2022-02-04",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "v2",
+                "properties",
+                ":slug",
+                "calendar"
+              ],
+              "query": [
+                {
+                  "key": "start_date",
+                  "value": "2022-01-04",
+                  "description": "start date in yyyy-mm-dd format"
+                },
+                {
+                  "key": "end_date",
+                  "value": "2022-02-04",
+                  "description": "end date in yyyy-mm-dd format"
+                }
+              ],
+              "variable": [
+                {
+                  "key": "slug",
+                  "value": "ishavilas"
+                }
+              ]
+            }
           },
           "response": []
         }
@@ -1472,7 +1501,7 @@
   ],
   "variable": [
     {
-      "id": "324d393f-dd35-45cb-ae4e-f1e39e733dcc",
+      "id": "acc53a29-aff8-4da9-a697-cfc9f611c209",
       "key": "URL",
       "value": "http://localhost:3000"
     }

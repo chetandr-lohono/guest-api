@@ -1450,31 +1450,6 @@
         }
       ],
       "id": "9282c10b-6eb6-438f-8209-d904bb7178a3"
-    },
-    {
-      "name": "Calendar",
-      "item": [
-        {
-          "name": "GET Calendar",
-          "id": "084dde73-632f-4f6c-825e-78227c6069ea",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "method": "GET",
-            "header": [
-              {
-                "key": "session",
-                "value": "{{session-id}}",
-                "type": "text"
-              }
-            ],
-            "url": "{{URL}}/v2/user"
-          },
-          "response": []
-        }
-      ],
-      "id": "f49bafd3-509e-47de-b18b-c11591887cd5"
     }
   ],
   "event": [
@@ -1501,7 +1476,7 @@
   ],
   "variable": [
     {
-      "id": "acc53a29-aff8-4da9-a697-cfc9f611c209",
+      "id": "b09a135e-8581-4eae-aa92-05c8cb4ec375",
       "key": "URL",
       "value": "http://localhost:3000"
     }

@@ -421,7 +421,7 @@
           "response": []
         },
         {
-          "name": "New Request",
+          "name": "calendar",
           "id": "86740c21-0c54-436b-a6b1-12d3029239a1",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -1472,7 +1472,7 @@
   ],
   "variable": [
     {
-      "id": "03aaa72f-d7fb-4ba1-82f7-3c292f6a6b21",
+      "id": "324d393f-dd35-45cb-ae4e-f1e39e733dcc",
       "key": "URL",
       "value": "http://localhost:3000"
     }

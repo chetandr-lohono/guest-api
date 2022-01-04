@@ -207,19 +207,6 @@
             "url": "{{URL}}/v2/locations"
           },
           "response": []
-        },
-        {
-          "name": "Feedback",
-          "id": "d297ec9e-7e4d-4dae-8d18-90209ade41ae",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "method": "GET",
-            "header": [],
-            "url": "{{URL}}/v2/locations"
-          },
-          "response": []
         }
       ],
       "id": "df7eee65-ef90-47e2-9970-a269ae217a4e"
@@ -1490,7 +1477,21 @@
     },
     {
       "name": "Feedback",
-      "item": [],
+      "item": [
+        {
+          "name": "Feedback",
+          "id": "d297ec9e-7e4d-4dae-8d18-90209ade41ae",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{URL}}/v2/locations"
+          },
+          "response": []
+        }
+      ],
       "id": "95943505-62d0-4272-a22a-da31f44c27cc"
     }
   ],
@@ -1518,7 +1519,7 @@
   ],
   "variable": [
     {
-      "id": "afb06959-b9cb-458d-a171-4feb4e62de4b",
+      "id": "331205e4-ad09-4625-965a-e3113b2a4a65",
       "key": "URL",
       "value": "http://localhost:3000"
     }

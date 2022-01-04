@@ -1479,19 +1479,6 @@
       "name": "Feedback",
       "item": [
         {
-          "name": "Feedback",
-          "id": "d297ec9e-7e4d-4dae-8d18-90209ade41ae",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "method": "GET",
-            "header": [],
-            "url": "{{URL}}/v2/locations"
-          },
-          "response": []
-        },
-        {
           "name": "View Feedback",
           "id": "a109872c-24dc-480a-98da-a87209cecef2",
           "protocolProfileBehavior": {
@@ -1563,7 +1550,7 @@
   ],
   "variable": [
     {
-      "id": "1ab290ce-b324-4047-b268-7725c01d316b",
+      "id": "32947869-139e-4719-b55c-fe0d76ad4f7b",
       "key": "URL",
       "value": "http://localhost:3000"
     }

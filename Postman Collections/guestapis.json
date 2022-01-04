@@ -1529,9 +1529,9 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n    \"guest_name\" : \"\",\n    \"property_slug\" : \"\",\n    \"questionnaire\" : [\n        {\n            \"id\" : \"\",\n            \"value\" : \"\",\n            \"description\" : \"\"\n        }\n    ]\n\n}"
+              "raw": "{\n    \"guest_name\" : \"Jhon Smith\",\n    \"property_slug\" : \"ishanya\",\n    \"questionnaire\" : [\n        {\n            \"id\" : \"1\",\n            \"value\" : 5,\n            \"description\" : \"All OK\"\n        }\n    ]\n\n}"
             },
-            "url": "https://api-staging.lohono.com/v2/feedbacks/{slug}"
+            "url": "{{URL}}/v2/feedbacks/ishanya"
           },
           "response": []
         },
@@ -1589,7 +1589,7 @@
   ],
   "variable": [
     {
-      "id": "d74502d5-fdaa-4c5f-b1d9-f44fd7b93780",
+      "id": "97536cbb-e5f5-4465-81da-ca0ee9ee72a2",
       "key": "URL",
       "value": "http://localhost:3000"
     }

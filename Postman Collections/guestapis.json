@@ -1508,6 +1508,32 @@
             "url": "https://api-staging.lohono.com/v2/feedbacks/{slug}"
           },
           "response": []
+        },
+        {
+          "name": "Update Feedback",
+          "id": "ca8bfc61-a05c-4052-87fb-8d8ba591caac",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Cookie",
+                "value": "_isprava_api_session=hOgiakkbouSVPqsdIj7EAez%2B96d%2BisutQansliZrgWpMFv4osbIX%2FQQtyt%2BGk6SMeFQhFhdV9G7zeFCi2Ek90W0p89zHuLicOjWrrlDf%2FzpaNM9WLw%2F%2F4LGkbnE6fZuZgWy2iiOiUYYDspZj6%2BOtJ9Tl4tn3t8%2FN8Jg3AvTUadNZa8ep8Ihx5WXpAF40RuDf86fpH8eaL9m%2BaYhbLQ3aI9b%2BCeTFRDvFr4yuNqBdw0ZE5U6SGl2TR1vACYKW4CU0HDjleDV%2F%2Bllz%2FYzoP0EWNvlng2YyxKCdUTLDUj%2F5Nq1VKOjcbrrAVQMGfJ5L2e3mt1l%2BzQ0XVrfyfy62mRQGFRGEW4KFdEANh%2F3W8g%2Ff%2BuqL2sEiAry%2FE%2FZG4jkz88ASegmj6wf0hTr9NdEYKEe2opH40CT1O%2FJEem4kkjnNj4rRGYE4gL8%3D--Cq8MPq%2FlYdiz4lc6--RzTUpe0xmiNVu00UPD3FNg%3D%3D"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"guest_name\" : \"\",\n    \"property_slug\" : \"\",\n    \"questionnaire\" : [\n        {\n            \"id\" : \"\",\n            \"value\" : \"\",\n            \"description\" : \"\"\n        }\n    ]\n\n}"
+            },
+            "url": "https://api-staging.lohono.com/v2/feedbacks/{slug}"
+          },
+          "response": []
         }
       ],
       "id": "95943505-62d0-4272-a22a-da31f44c27cc"
@@ -1537,7 +1563,7 @@
   ],
   "variable": [
     {
-      "id": "fed4d998-17c9-41aa-8ef5-e09b24af0d68",
+      "id": "6ec2c74b-bd8d-4723-a8ce-9cec7345053e",
       "key": "URL",
       "value": "http://localhost:3000"
     }

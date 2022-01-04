@@ -224,7 +224,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{URL}}/v2/properties?location_slug=india-goa",
+              "raw": "{{URL}}/v2/properties?location_slug=india-goa&month&year&min_days&max_days",
               "host": [
                 "{{URL}}"
               ],
@@ -242,6 +242,30 @@
                   "value": "false",
                   "description": "[Optional]",
                   "disabled": true
+                },
+                {
+                  "key": "month",
+                  "value": null,
+                  "description": "Month in integer. Eg: 1 for Jan, 2 for Feb and so on",
+                  "type": "default"
+                },
+                {
+                  "key": "year",
+                  "value": null,
+                  "description": "Four digit year. Eg: 2022",
+                  "type": "default"
+                },
+                {
+                  "key": "min_days",
+                  "value": null,
+                  "description": "Minimum days for stay",
+                  "type": "default"
+                },
+                {
+                  "key": "max_days",
+                  "value": null,
+                  "description": "Maximum days for stay",
+                  "type": "default"
                 }
               ]
             }
@@ -1476,7 +1500,7 @@
   ],
   "variable": [
     {
-      "id": "de7a5223-f8af-4632-ab42-f4267c8c0e87",
+      "id": "f92e01d8-1675-4e19-be0d-2ed9e48251ae",
       "key": "URL",
       "value": "http://localhost:3000"
     }

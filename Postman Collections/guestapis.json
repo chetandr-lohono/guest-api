@@ -1487,6 +1487,11 @@
         }
       ],
       "id": "9282c10b-6eb6-438f-8209-d904bb7178a3"
+    },
+    {
+      "name": "New Folder",
+      "item": [],
+      "id": "95943505-62d0-4272-a22a-da31f44c27cc"
     }
   ],
   "event": [
@@ -1513,7 +1518,7 @@
   ],
   "variable": [
     {
-      "id": "f84fc347-9a55-45e2-94d1-58685c124cf7",
+      "id": "52a288f9-4476-45a5-aade-e71bde2b58dc",
       "key": "URL",
       "value": "http://localhost:3000"
     }

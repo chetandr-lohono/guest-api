@@ -419,6 +419,19 @@
             "url": "{{URL}}/v2/properties/rates"
           },
           "response": []
+        },
+        {
+          "name": "New Request",
+          "id": "86740c21-0c54-436b-a6b1-12d3029239a1",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": null
+          },
+          "response": []
         }
       ],
       "id": "0a84399c-9a6f-45b8-9f7e-21227c284354"
@@ -1459,7 +1472,7 @@
   ],
   "variable": [
     {
-      "id": "7b6ad9ea-bfdd-4ce1-8cfd-1cb7aa92b436",
+      "id": "d6ad4159-3f5e-43a3-b9a9-aee43f9a94e3",
       "key": "URL",
       "value": "http://localhost:3000"
     }

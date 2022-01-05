@@ -1487,7 +1487,7 @@
       "name": "Calendar",
       "item": [
         {
-          "name": "calendar",
+          "name": "Calendar for a property",
           "id": "86740c21-0c54-436b-a6b1-12d3029239a1",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -1556,7 +1556,7 @@
   ],
   "variable": [
     {
-      "id": "ac99dbf1-521c-47f7-8941-2381be32cbce",
+      "id": "4e021e95-0cca-41f1-9e36-890d812bb671",
       "key": "URL",
       "value": "http://localhost:3000"
     }

@@ -443,48 +443,6 @@
             "url": "{{URL}}/v2/properties/rates"
           },
           "response": []
-        },
-        {
-          "name": "calendar",
-          "id": "86740c21-0c54-436b-a6b1-12d3029239a1",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "method": "GET",
-            "header": [],
-            "url": {
-              "raw": "{{URL}}/v2/properties/:slug/calendar?start_date=&end_date=",
-              "host": [
-                "{{URL}}"
-              ],
-              "path": [
-                "v2",
-                "properties",
-                ":slug",
-                "calendar"
-              ],
-              "query": [
-                {
-                  "key": "start_date",
-                  "value": "",
-                  "description": "start date in yyyy-mm-dd format [required]"
-                },
-                {
-                  "key": "end_date",
-                  "value": "",
-                  "description": "end date in yyyy-mm-dd format [required]"
-                }
-              ],
-              "variable": [
-                {
-                  "key": "slug",
-                  "value": ""
-                }
-              ]
-            }
-          },
-          "response": []
         }
       ],
       "id": "0a84399c-9a6f-45b8-9f7e-21227c284354"
@@ -1527,7 +1485,50 @@
     },
     {
       "name": "Calendar",
-      "item": [],
+      "item": [
+        {
+          "name": "calendar",
+          "id": "86740c21-0c54-436b-a6b1-12d3029239a1",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{URL}}/v2/properties/:slug/calendar?start_date=&end_date=",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "v2",
+                "properties",
+                ":slug",
+                "calendar"
+              ],
+              "query": [
+                {
+                  "key": "start_date",
+                  "value": "",
+                  "description": "start date in yyyy-mm-dd format [required]"
+                },
+                {
+                  "key": "end_date",
+                  "value": "",
+                  "description": "end date in yyyy-mm-dd format [required]"
+                }
+              ],
+              "variable": [
+                {
+                  "key": "slug",
+                  "value": ""
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
       "id": "65fcf1d9-59a8-4c0e-a69e-3c17d75a1caa"
     }
   ],
@@ -1555,7 +1556,7 @@
   ],
   "variable": [
     {
-      "id": "abdd3d44-1c26-49a1-8ec4-613072196ef6",
+      "id": "07c66f77-baab-402a-8214-eaa8966935ee",
       "key": "URL",
       "value": "http://localhost:3000"
     }

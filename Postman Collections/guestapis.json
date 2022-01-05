@@ -1526,7 +1526,7 @@
       "id": "95943505-62d0-4272-a22a-da31f44c27cc"
     },
     {
-      "name": "New Folder",
+      "name": "Calendar",
       "item": [],
       "id": "65fcf1d9-59a8-4c0e-a69e-3c17d75a1caa"
     }
@@ -1555,7 +1555,7 @@
   ],
   "variable": [
     {
-      "id": "a7699f47-a449-4097-86af-635f2d8c23ac",
+      "id": "abdd3d44-1c26-49a1-8ec4-613072196ef6",
       "key": "URL",
       "value": "http://localhost:3000"
     }

@@ -1429,6 +1429,47 @@
             "url": "{{URL}}/v2/booking/confirm"
           },
           "response": []
+        },
+        {
+          "name": "Booking Create Copy",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "da76939e-b134-42ce-ae8b-9e6e4c0b03a6",
+                "exec": [
+                  "var jsonData = JSON.parse(responseBody);",
+                  "pm.environment.set(\"reservation-slug\", jsonData[\"slug\"])"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "id": "d4ce793d-2df3-4d42-9a78-0b621a243b0e",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "session",
+                "value": "{{session-id}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"property_slug\" : \"monforte-vaddo-f\",\n    \"name\" : \"Chetan Rane\",\n    \"billing_email\" : \"chetan.d.rane@gmail.com\",\n    \"country_code\" : \"91\",\n    \"billing_mobile\" : \"9999999991\",\n    \"check_in\" : \"2022/01/08\",\n    \"check_out\": \"2022/01/09\",\n    \"adults\" : 2,\n    \"children\" : 2,\n    \"customer_note\":\"This Note is special\",\n    \"coupon_code\":\"\",\n    \"meta\" :{},\n    \"gift_cards\":\"\",\n    \"brand_id\": \"\",\n    \"property_config_id\":\"\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{URL}}/v2/booking"
+          },
+          "response": []
         }
       ],
       "id": "9282c10b-6eb6-438f-8209-d904bb7178a3"
@@ -1556,7 +1597,7 @@
   ],
   "variable": [
     {
-      "id": "4e021e95-0cca-41f1-9e36-890d812bb671",
+      "id": "485401b9-6547-4db8-ba06-a67dbb8a358c",
       "key": "URL",
       "value": "http://localhost:3000"
     }

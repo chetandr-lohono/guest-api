@@ -442,7 +442,99 @@
               ]
             }
           },
-          "response": []
+          "response": [
+            {
+              "id": "5a59b57b-13df-48be-b8c9-e330d678d572",
+              "name": "propertylist curated",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{URL}}/v2/properties?highlight={{highligh-slug}}",
+                  "host": [
+                    "{{URL}}"
+                  ],
+                  "path": [
+                    "v2",
+                    "properties"
+                  ],
+                  "query": [
+                    {
+                      "key": "highlight",
+                      "value": "{{highligh-slug}}",
+                      "description": "[Required]"
+                    },
+                    {
+                      "key": "trending",
+                      "value": "false",
+                      "description": "[Optional]",
+                      "disabled": true
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "X-Frame-Options",
+                  "value": "SAMEORIGIN"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Download-Options",
+                  "value": "noopen"
+                },
+                {
+                  "key": "X-Permitted-Cross-Domain-Policies",
+                  "value": "none"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "strict-origin-when-cross-origin"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"96f3e67c0dcf5452c988a25ddc162794\""
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "max-age=0, private, must-revalidate"
+                },
+                {
+                  "key": "X-Request-Id",
+                  "value": "a47891ed-ce76-463c-9714-76d916c65cde"
+                },
+                {
+                  "key": "X-Runtime",
+                  "value": "0.789606"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "Server",
+                  "value": "thin"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"properties\": [\n        {\n            \"name\": \"Villa Branco\",\n            \"slug\": \"isp-villa-branco\",\n            \"isprava_built\": true,\n            \"images\": [\n                {\n                    \"alt\": \"Villa Branco - Pool view\",\n                    \"url\": \"https://d360889yflu7he.cloudfront.net/rental_property/isp-villa-branco/pool-view.jpeg\"\n                },\n                {\n                    \"alt\": \"Villa Branco - Gazebo\",\n                    \"url\": \"https://d360889yflu7he.cloudfront.net/rental_property/isp-villa-branco/gazebo.jpeg\"\n                },\n                {\n                    \"alt\": \"Villa Branco - Pool\",\n                    \"url\": \"https://d360889yflu7he.cloudfront.net/rental_property/isp-villa-branco/pool.jpeg\"\n                },\n                {\n                    \"alt\": \"Villa Branco - Outdoor Dining Area\",\n                    \"url\": \"https://d360889yflu7he.cloudfront.net/rental_property/isp-villa-branco/outdoor-dining-area.jpeg\"\n                }\n            ],\n            \"featured_in\": [\n                \"Architectural Digest\"\n            ],\n            \"address\": \"Anjuna, Goa, India\",\n            \"location\": {\n                \"name\": \"Goa\",\n                \"slug\": \"india-goa\"\n            },\n            \"bedroom_count\": 5,\n            \"max_guests\": \"Upto 12\",\n            \"currency_code\": \"INR\",\n            \"currency_symbol\": \"₹\",\n            \"pools_count\": 1,\n            \"baths_count\": 5,\n            \"pets_allowed\": false,\n            \"sold_out\": false,\n            \"price\": 69000,\n            \"discounted_price\": null,\n            \"upcoming\": false,\n            \"status\": \"available\",\n            \"brand\": \"lohono\",\n            \"property_configs\": [\n                {\n                    \"property_config_id\": 23,\n                    \"bedrooms\": 5\n                }\n            ]\n        }\n    ],\n    \"discount_message\": null,\n    \"paginate\": {\n        \"total_records\": 1,\n        \"total_pages\": 1,\n        \"start_offset\": 1,\n        \"end_offset\": 1,\n        \"current_page\": 1\n    },\n    \"meta\": {\n        \"error\": false\n    }\n}"
+            }
+          ]
         },
         {
           "name": "propertylist mood",
@@ -1734,7 +1826,7 @@
   ],
   "variable": [
     {
-      "id": "0c95e697-4157-4b55-b35b-c8411b9e06e2",
+      "id": "bb797e70-1200-411b-9a8f-4d924ab61caf",
       "key": "URL",
       "value": "http://localhost:3000"
     }

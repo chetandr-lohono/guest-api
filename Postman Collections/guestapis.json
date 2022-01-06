@@ -1406,7 +1406,7 @@
             "disableBodyPruning": true
           },
           "request": {
-            "method": "POST",
+            "method": "PATCH",
             "header": [
               {
                 "key": "session",
@@ -1597,7 +1597,7 @@
   ],
   "variable": [
     {
-      "id": "c282fa3d-61ff-404d-a155-355b94a536b5",
+      "id": "9abccc26-e28d-4dcd-b0a6-3091929d4fee",
       "key": "URL",
       "value": "http://localhost:3000"
     }

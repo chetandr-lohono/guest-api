@@ -1387,7 +1387,7 @@
           "response": []
         },
         {
-          "name": "Booking Create Copy",
+          "name": "Booking update",
           "event": [
             {
               "listen": "test",
@@ -1597,7 +1597,7 @@
   ],
   "variable": [
     {
-      "id": "cc7f3bfc-a576-4ade-ba82-214ebdcd318f",
+      "id": "c282fa3d-61ff-404d-a155-355b94a536b5",
       "key": "URL",
       "value": "http://localhost:3000"
     }

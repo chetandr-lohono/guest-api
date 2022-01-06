@@ -270,7 +270,144 @@
               ]
             }
           },
-          "response": []
+          "response": [
+            {
+              "id": "d6e8527c-7230-4c51-b878-6838fb5d7fda",
+              "name": "propertylist for a location",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{URL}}/v2/properties?location_slug=india-goa&month=2&year=2022&min_days=2&max_days=5&adults=8&children=4&page=2",
+                  "host": [
+                    "{{URL}}"
+                  ],
+                  "path": [
+                    "v2",
+                    "properties"
+                  ],
+                  "query": [
+                    {
+                      "key": "location_slug",
+                      "value": "india-goa"
+                    },
+                    {
+                      "key": "trending",
+                      "value": "false",
+                      "description": "[Optional]",
+                      "disabled": true
+                    },
+                    {
+                      "key": "month",
+                      "value": "2"
+                    },
+                    {
+                      "key": "year",
+                      "value": "2022"
+                    },
+                    {
+                      "key": "min_days",
+                      "value": "2"
+                    },
+                    {
+                      "key": "max_days",
+                      "value": "5"
+                    },
+                    {
+                      "key": "page",
+                      "value": "4",
+                      "type": "text",
+                      "disabled": true
+                    },
+                    {
+                      "key": "adults",
+                      "value": "8"
+                    },
+                    {
+                      "key": "children",
+                      "value": "4"
+                    },
+                    {
+                      "key": "check_in",
+                      "value": "2022-01-26",
+                      "type": "text",
+                      "disabled": true
+                    },
+                    {
+                      "key": "check_out",
+                      "value": "2022-01-30",
+                      "type": "text",
+                      "disabled": true
+                    },
+                    {
+                      "key": "page",
+                      "value": "2"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "X-Frame-Options",
+                  "value": "SAMEORIGIN"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Download-Options",
+                  "value": "noopen"
+                },
+                {
+                  "key": "X-Permitted-Cross-Domain-Policies",
+                  "value": "none"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "strict-origin-when-cross-origin"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"4a75a50bcd66851dee3c70416d36d75b\""
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "max-age=0, private, must-revalidate"
+                },
+                {
+                  "key": "X-Request-Id",
+                  "value": "d22ef2c8-af50-4bc0-a0a8-7740eec237f0"
+                },
+                {
+                  "key": "X-Runtime",
+                  "value": "1.830300"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "Server",
+                  "value": "thin"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"properties\": [\n        {\n            \"name\": \"Villa Evora\",\n            \"slug\": \"isp-villa-evora\",\n            \"isprava_built\": true,\n            \"images\": [\n                {\n                    \"alt\": \"Villa Evora - Villa Near Vagator Beach\",\n                    \"url\": \"https://d360889yflu7he.cloudfront.net/rental_property/isp-villa-evora/holding.jpg\"\n                },\n                {\n                    \"alt\": \"Villa Evora - 4 Bedroom Villa in Goa\",\n                    \"url\": \"https://d360889yflu7he.cloudfront.net/rental_property/isp-villa-evora/bedroom.jpg\"\n                },\n                {\n                    \"alt\": \"Villa Evora - Portugese Villa in Assangaon\",\n                    \"url\": \"https://d360889yflu7he.cloudfront.net/rental_property/isp-villa-evora/dining.jpg\"\n                },\n                {\n                    \"alt\": \"Sanitised pool villa for rent in Goa\",\n                    \"url\": \"https://d360889yflu7he.cloudfront.net/rental_property/isp-villa-evora/Isprava_Villa_Evora-30.jpg\"\n                }\n            ],\n            \"featured_in\": [\n                \"Conde Nast Traveler\"\n            ],\n            \"address\": \"Assagaon, Goa, India\",\n            \"location\": {\n                \"name\": \"Goa\",\n                \"slug\": \"india-goa\"\n            },\n            \"bedroom_count\": 4,\n            \"max_guests\": \"Upto 10\",\n            \"currency_code\": \"INR\",\n            \"currency_symbol\": \"₹\",\n            \"pools_count\": 1,\n            \"baths_count\": 4,\n            \"pets_allowed\": true,\n            \"sold_out\": false,\n            \"price\": 50000,\n            \"discounted_price\": null,\n            \"upcoming\": false,\n            \"status\": \"available\",\n            \"brand\": \"lohono\",\n            \"property_configs\": [\n                {\n                    \"property_config_id\": 2,\n                    \"bedrooms\": 4\n                }\n            ]\n        },\n        {\n            \"name\": \"Villa Vivre\",\n            \"slug\": \"isp-villa-vivre\",\n            \"isprava_built\": true,\n            \"images\": [\n                {\n                    \"alt\": \"Villa Vivre - Luxury Villa in North Goa\",\n                    \"url\": \"https://d360889yflu7he.cloudfront.net/rental_property/isp-villa-vivre/holding.jpg\"\n                },\n                {\n                    \"alt\": \"Villa Vivre - Private Villa for Rent\",\n                    \"url\": \"https://d360889yflu7he.cloudfront.net/rental_property/isp-villa-vivre/Villa-Vivre-1.jpg\"\n                },\n                {\n                    \"alt\": \"Villa Vivre - Villa in Assagaon, Goa\",\n                    \"url\": \"https://d360889yflu7he.cloudfront.net/rental_property/isp-villa-vivre/Villa-Vivre-3.jpg\"\n                },\n                {\n                    \"alt\": \"Villa Vivre - Luxury Villa near Vagator Beach\",\n                    \"url\": \"https://d360889yflu7he.cloudfront.net/rental_property/isp-villa-vivre/Villa-Vivre-4.jpg\"\n                }\n            ],\n            \"featured_in\": [\n                \"Brown Paper Bag\"\n            ],\n            \"address\": \"Assagaon, Goa, India\",\n            \"location\": {\n                \"name\": \"Goa\",\n                \"slug\": \"india-goa\"\n            },\n            \"bedroom_count\": 4,\n            \"max_guests\": \"Upto 10\",\n            \"currency_code\": \"INR\",\n            \"currency_symbol\": \"₹\",\n            \"pools_count\": 1,\n            \"baths_count\": 4,\n            \"pets_allowed\": false,\n            \"sold_out\": false,\n            \"price\": 50000,\n            \"discounted_price\": null,\n            \"upcoming\": false,\n            \"status\": \"available\",\n            \"brand\": \"lohono\",\n            \"property_configs\": [\n                {\n                    \"property_config_id\": 21,\n                    \"bedrooms\": 4\n                }\n            ]\n        },\n        {\n            \"name\": \"Villa Verde\",\n            \"slug\": \"isp-villa-verde\",\n            \"isprava_built\": true,\n            \"images\": [\n                {\n                    \"alt\": \"Villa Verde - Private Villa in North Goa\",\n                    \"url\": \"https://d360889yflu7he.cloudfront.net/rental_property/isp-villa-verde/Banner-DSC_8443.jpg\"\n                },\n                {\n                    \"alt\": \"Villa Verde - Villa near Vagator Beach\",\n                    \"url\": \"https://d360889yflu7he.cloudfront.net/rental_property/isp-villa-verde/holding.jpg\"\n                },\n                {\n                    \"alt\": \"Villa Verde - 4 BHK Villa in Goa\",\n                    \"url\": \"https://d360889yflu7he.cloudfront.net/rental_property/isp-villa-verde/bedroom.jpg\"\n                },\n                {\n                    \"alt\": \"Villa Verde - Anjuna, Goa\",\n                    \"url\": \"https://d360889yflu7he.cloudfront.net/rental_property/isp-villa-verde/living.jpg\"\n                }\n            ],\n            \"featured_in\": [\n                \"Better Interiors\"\n            ],\n            \"address\": \"Anjuna, Goa, India\",\n            \"location\": {\n                \"name\": \"Goa\",\n                \"slug\": \"india-goa\"\n            },\n            \"bedroom_count\": 4,\n            \"max_guests\": \"Upto 10\",\n            \"currency_code\": \"INR\",\n            \"currency_symbol\": \"₹\",\n            \"pools_count\": 1,\n            \"baths_count\": 4,\n            \"pets_allowed\": false,\n            \"sold_out\": false,\n            \"price\": 53000,\n            \"discounted_price\": null,\n            \"upcoming\": false,\n            \"status\": \"available\",\n            \"brand\": \"lohono\",\n            \"property_configs\": [\n                {\n                    \"property_config_id\": 8,\n                    \"bedrooms\": 4\n                }\n            ]\n        },\n        {\n            \"name\": \"Villa Alenteho\",\n            \"slug\": \"prop-villa-alenteho-2jiN\",\n            \"isprava_built\": true,\n            \"images\": [\n                {\n                    \"alt\": \"Villa Alenteho - Villa in Assagaon, Goa\",\n                    \"url\": \"https://d360889yflu7he.cloudfront.net/rental_property/prop-villa-alenteho-2jiN/banner-i4cr.jpg\"\n                },\n                {\n                    \"alt\": \"Romantic pool villa for rent in Goa - Lohono Stays\",\n                    \"url\": \"https://d360889yflu7he.cloudfront.net/rental_property/prop-villa-alenteho-2jiN/DSC_1790.jpg\"\n                },\n                {\n                    \"alt\": \"Villa Alenteho - Private Villa in North Goa\",\n                    \"url\": \"https://d360889yflu7he.cloudfront.net/rental_property/prop-villa-alenteho-2jiN/copy-of-dsc_1091-yZTL.jpg\"\n                },\n                {\n                    \"alt\": \"Villa Alenteho - Luxury Villa near Vagator Beach\",\n                    \"url\": \"https://d360889yflu7he.cloudfront.net/rental_property/prop-villa-alenteho-2jiN/copy-of-dsc_0949-Dcaj.jpg\"\n                }\n            ],\n            \"featured_in\": [],\n            \"address\": \"Assagaon, Goa, India\",\n            \"location\": {\n                \"name\": \"Goa\",\n                \"slug\": \"india-goa\"\n            },\n            \"bedroom_count\": 4,\n            \"max_guests\": \"Upto 8\",\n            \"currency_code\": \"INR\",\n            \"currency_symbol\": \"₹\",\n            \"pools_count\": 1,\n            \"baths_count\": 4,\n            \"pets_allowed\": false,\n            \"sold_out\": false,\n            \"price\": 53000,\n            \"discounted_price\": null,\n            \"upcoming\": false,\n            \"status\": \"available\",\n            \"brand\": \"lohono\",\n            \"property_configs\": [\n                {\n                    \"property_config_id\": 9,\n                    \"bedrooms\": 4\n                }\n            ]\n        },\n        {\n            \"name\": \"Frangipani on the river\",\n            \"slug\": \"frangipani-on-the-river\",\n            \"isprava_built\": false,\n            \"images\": [\n                {\n                    \"alt\": \"Frangipani - Swimming Pool Area\",\n                    \"url\": \"https://d360889yflu7he.cloudfront.net/rental_property/frangipani-on-the-river/swimming-pool-area.jpeg\"\n                },\n                {\n                    \"alt\": \"Frangipani - Villa View\",\n                    \"url\": \"https://d360889yflu7he.cloudfront.net/rental_property/frangipani-on-the-river/villa-view.jpeg\"\n                },\n                {\n                    \"alt\": \"Frangipani - Entrance\",\n                    \"url\": \"https://d360889yflu7he.cloudfront.net/rental_property/frangipani-on-the-river/entrance.jpeg\"\n                },\n                {\n                    \"alt\": \"Frangipani - Foyer\",\n                    \"url\": \"https://d360889yflu7he.cloudfront.net/rental_property/frangipani-on-the-river/foyer.jpeg\"\n                }\n            ],\n            \"featured_in\": [],\n            \"address\": \"Nerul, Goa, India\",\n            \"location\": {\n                \"name\": \"Goa\",\n                \"slug\": \"india-goa\"\n            },\n            \"bedroom_count\": 4,\n            \"max_guests\": \"Upto 10\",\n            \"currency_code\": \"INR\",\n            \"currency_symbol\": \"₹\",\n            \"pools_count\": 1,\n            \"baths_count\": 5,\n            \"pets_allowed\": true,\n            \"sold_out\": false,\n            \"price\": 53000,\n            \"discounted_price\": null,\n            \"upcoming\": false,\n            \"status\": \"available\",\n            \"brand\": \"lohono\",\n            \"property_configs\": [\n                {\n                    \"property_config_id\": 51,\n                    \"bedrooms\": 4\n                }\n            ]\n        },\n        {\n            \"name\": \"Ishavilas\",\n            \"slug\": \"ishavilas\",\n            \"isprava_built\": false,\n            \"images\": [\n                {\n                    \"alt\": \"Ishavilas - Private Villa on Rent\",\n                    \"url\": \"https://d360889yflu7he.cloudfront.net/rental_property/ishavilas/private-villa-on-rent.jpeg\"\n                },\n                {\n                    \"alt\": \"Ishavilas - Pool\",\n                    \"url\": \"https://d360889yflu7he.cloudfront.net/rental_property/ishavilas/pool.jpeg\"\n                },\n                {\n                    \"alt\": \"Ishavilas - Pool View 2\",\n                    \"url\": \"https://d360889yflu7he.cloudfront.net/rental_property/ishavilas/pool-view2.jpeg\"\n                },\n                {\n                    \"alt\": \"Ishavilas - Pool Sitting Area\",\n                    \"url\": \"https://d360889yflu7he.cloudfront.net/rental_property/ishavilas/pool-sitting-area.jpeg\"\n                }\n            ],\n            \"featured_in\": [],\n            \"address\": \"Siolim, Goa, India\",\n            \"location\": {\n                \"name\": \"Goa\",\n                \"slug\": \"india-goa\"\n            },\n            \"bedroom_count\": 5,\n            \"max_guests\": \"Upto 12\",\n            \"currency_code\": \"INR\",\n            \"currency_symbol\": \"₹\",\n            \"pools_count\": 1,\n            \"baths_count\": 4,\n            \"pets_allowed\": true,\n            \"sold_out\": false,\n            \"price\": 53000,\n            \"discounted_price\": null,\n            \"upcoming\": false,\n            \"status\": \"available\",\n            \"brand\": \"lohono\",\n            \"property_configs\": [\n                {\n                    \"property_config_id\": 37,\n                    \"bedrooms\": 4\n                },\n                {\n                    \"property_config_id\": 53,\n                    \"bedrooms\": 5\n                }\n            ]\n        },\n        {\n            \"name\": \"Villa Azul\",\n            \"slug\": \"villa-azul\",\n            \"isprava_built\": true,\n            \"images\": [\n                {\n                    \"alt\": \"Villa Azul - Outdoor Pool Area\",\n                    \"url\": \"https://d360889yflu7he.cloudfront.net/rental_property/villa-azul/outdoor-pool-area.jpg\"\n                },\n                {\n                    \"alt\": \"Villa Azul - Living Area\",\n                    \"url\": \"https://d360889yflu7he.cloudfront.net/rental_property/villa-azul/living-area.jpeg\"\n                },\n                {\n                    \"alt\": \"Villa Azul - Living Room\",\n                    \"url\": \"https://d360889yflu7he.cloudfront.net/rental_property/villa-azul/living-room.jpeg\"\n                },\n                {\n                    \"alt\": \"Villa Azul - Dining Area\",\n                    \"url\": \"https://d360889yflu7he.cloudfront.net/rental_property/villa-azul/dining-area.jpeg\"\n                }\n            ],\n            \"featured_in\": [],\n            \"address\": \"Vagator, Goa, India\",\n            \"location\": {\n                \"name\": \"Goa\",\n                \"slug\": \"india-goa\"\n            },\n            \"bedroom_count\": 5,\n            \"max_guests\": \"Upto 12\",\n            \"currency_code\": \"INR\",\n            \"currency_symbol\": \"₹\",\n            \"pools_count\": 1,\n            \"baths_count\": 5,\n            \"pets_allowed\": true,\n            \"sold_out\": false,\n            \"price\": 69000,\n            \"discounted_price\": null,\n            \"upcoming\": false,\n            \"status\": \"available\",\n            \"brand\": \"lohono\",\n            \"property_configs\": [\n                {\n                    \"property_config_id\": 42,\n                    \"bedrooms\": 5\n                }\n            ]\n        },\n        {\n            \"name\": \"Rainbowtree House\",\n            \"slug\": \"prop-rainbow-tree-Ythu\",\n            \"isprava_built\": false,\n            \"images\": [\n                {\n                    \"alt\": \"Rainbowtree - Luxury villas in Goa\",\n                    \"url\": \"https://d360889yflu7he.cloudfront.net/rental_property/prop-rainbow-tree-Ythu/feature-xx6K.jpg\"\n                },\n                {\n                    \"alt\": \"Rainbowtree - Private pool villas in Goa\",\n                    \"url\": \"https://d360889yflu7he.cloudfront.net/rental_property/prop-rainbow-tree-Ythu/listing-nAYF.jpg\"\n                },\n                {\n                    \"alt\": \"Rainbowtree - Private pool villas\",\n                    \"url\": \"https://d360889yflu7he.cloudfront.net/rental_property/prop-rainbow-tree-Ythu/5n9a6993-DJzH.jpg\"\n                },\n                {\n                    \"alt\": \"Rainbowtree - Private bungalow in Anjuna, Goa\",\n                    \"url\": \"https://d360889yflu7he.cloudfront.net/rental_property/prop-rainbow-tree-Ythu/5n9a6507-hdr-o3zf.jpg\"\n                }\n            ],\n            \"featured_in\": [],\n            \"address\": \"Anjuna, Goa, India\",\n            \"location\": {\n                \"name\": \"Goa\",\n                \"slug\": \"india-goa\"\n            },\n            \"bedroom_count\": 5,\n            \"max_guests\": \"Upto 11\",\n            \"currency_code\": \"INR\",\n            \"currency_symbol\": \"₹\",\n            \"pools_count\": 1,\n            \"baths_count\": 5,\n            \"pets_allowed\": null,\n            \"sold_out\": false,\n            \"price\": 69000,\n            \"discounted_price\": null,\n            \"upcoming\": false,\n            \"status\": \"available\",\n            \"brand\": \"lohono\",\n            \"property_configs\": [\n                {\n                    \"property_config_id\": 19,\n                    \"bedrooms\": 5\n                }\n            ]\n        },\n        {\n            \"name\": \"Villa Branco\",\n            \"slug\": \"isp-villa-branco\",\n            \"isprava_built\": true,\n            \"images\": [\n                {\n                    \"alt\": \"Villa Branco - Pool view\",\n                    \"url\": \"https://d360889yflu7he.cloudfront.net/rental_property/isp-villa-branco/pool-view.jpeg\"\n                },\n                {\n                    \"alt\": \"Villa Branco - Gazebo\",\n                    \"url\": \"https://d360889yflu7he.cloudfront.net/rental_property/isp-villa-branco/gazebo.jpeg\"\n                },\n                {\n                    \"alt\": \"Villa Branco - Pool\",\n                    \"url\": \"https://d360889yflu7he.cloudfront.net/rental_property/isp-villa-branco/pool.jpeg\"\n                },\n                {\n                    \"alt\": \"Villa Branco - Outdoor Dining Area\",\n                    \"url\": \"https://d360889yflu7he.cloudfront.net/rental_property/isp-villa-branco/outdoor-dining-area.jpeg\"\n                }\n            ],\n            \"featured_in\": [\n                \"Architectural Digest\"\n            ],\n            \"address\": \"Anjuna, Goa, India\",\n            \"location\": {\n                \"name\": \"Goa\",\n                \"slug\": \"india-goa\"\n            },\n            \"bedroom_count\": 5,\n            \"max_guests\": \"Upto 12\",\n            \"currency_code\": \"INR\",\n            \"currency_symbol\": \"₹\",\n            \"pools_count\": 1,\n            \"baths_count\": 5,\n            \"pets_allowed\": false,\n            \"sold_out\": false,\n            \"price\": 69000,\n            \"discounted_price\": null,\n            \"upcoming\": false,\n            \"status\": \"available\",\n            \"brand\": \"lohono\",\n            \"property_configs\": [\n                {\n                    \"property_config_id\": 23,\n                    \"bedrooms\": 5\n                }\n            ]\n        },\n        {\n            \"name\": \"Villa Nimaya\",\n            \"slug\": \"villa-nimaya\",\n            \"isprava_built\": false,\n            \"images\": [\n                {\n                    \"alt\": \"Villa Nimaya - Outdoor Pool Area\",\n                    \"url\": \"https://d360889yflu7he.cloudfront.net/rental_property/villa-nimaya/outdoor-pool-area.jpeg\"\n                },\n                {\n                    \"alt\": \"Villa Nimaya - Pool Area\",\n                    \"url\": \"https://d360889yflu7he.cloudfront.net/rental_property/villa-nimaya/pool-area.jpeg\"\n                },\n                {\n                    \"alt\": \"Villa Nimaya - Poolside Dining\",\n                    \"url\": \"https://d360889yflu7he.cloudfront.net/rental_property/villa-nimaya/pool-side-dining.jpeg\"\n                },\n                {\n                    \"alt\": \"Villa Nimaya - Poolside Sitting Area\",\n                    \"url\": \"https://d360889yflu7he.cloudfront.net/rental_property/villa-nimaya/pool-side-sit-out.jpeg\"\n                }\n            ],\n            \"featured_in\": [],\n            \"address\": \"Nagoa, Goa, India\",\n            \"location\": {\n                \"name\": \"Goa\",\n                \"slug\": \"india-goa\"\n            },\n            \"bedroom_count\": 5,\n            \"max_guests\": \"Upto 12\",\n            \"currency_code\": \"INR\",\n            \"currency_symbol\": \"₹\",\n            \"pools_count\": 1,\n            \"baths_count\": 5,\n            \"pets_allowed\": false,\n            \"sold_out\": false,\n            \"price\": 69000,\n            \"discounted_price\": null,\n            \"upcoming\": false,\n            \"status\": \"available\",\n            \"brand\": \"lohono\",\n            \"property_configs\": [\n                {\n                    \"property_config_id\": 49,\n                    \"bedrooms\": 5\n                }\n            ]\n        }\n    ],\n    \"discount_message\": null,\n    \"paginate\": {\n        \"total_records\": 22,\n        \"total_pages\": 3,\n        \"start_offset\": 11,\n        \"end_offset\": 20,\n        \"current_page\": \"2\"\n    },\n    \"meta\": {\n        \"error\": false\n    }\n}"
+            }
+          ]
         },
         {
           "name": "propertylist curated",
@@ -1597,7 +1734,7 @@
   ],
   "variable": [
     {
-      "id": "a51fa580-3482-45ab-87c5-7962fdf866dc",
+      "id": "0b819d05-674b-4ea0-8bb6-4b382ef0a0b8",
       "key": "URL",
       "value": "http://localhost:3000"
     }

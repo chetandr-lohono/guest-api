@@ -1616,47 +1616,6 @@
           "response": []
         },
         {
-          "name": "Booking update",
-          "event": [
-            {
-              "listen": "test",
-              "script": {
-                "id": "da76939e-b134-42ce-ae8b-9e6e4c0b03a6",
-                "exec": [
-                  "var jsonData = JSON.parse(responseBody);",
-                  "pm.environment.set(\"reservation-slug\", jsonData[\"slug\"])"
-                ],
-                "type": "text/javascript"
-              }
-            }
-          ],
-          "id": "d4ce793d-2df3-4d42-9a78-0b621a243b0e",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "method": "PATCH",
-            "header": [
-              {
-                "key": "session",
-                "value": "{{session-id}}",
-                "type": "text"
-              }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": "{\n    \"property_slug\" : \"monforte-vaddo-f\",\n    \"name\" : \"Chetan Rane\",\n    \"billing_email\" : \"chetan.d.rane@gmail.com\",\n    \"country_code\" : \"91\",\n    \"billing_mobile\" : \"9999999991\",\n    \"check_in\" : \"2022/01/08\",\n    \"check_out\": \"2022/01/09\",\n    \"adults\" : 2,\n    \"children\" : 2,\n    \"customer_note\":\"This Note is special\",\n    \"coupon_code\":\"\",\n    \"meta\" :{},\n    \"gift_cards\":\"\",\n    \"brand_id\": \"\",\n    \"property_config_id\":\"\"\n}",
-              "options": {
-                "raw": {
-                  "language": "json"
-                }
-              }
-            },
-            "url": "{{URL}}/v2/booking"
-          },
-          "response": []
-        },
-        {
           "name": "Booking get",
           "id": "85c11a50-184f-4566-95ba-f734620d7d04",
           "protocolProfileBehavior": {
@@ -1826,7 +1785,7 @@
   ],
   "variable": [
     {
-      "id": "3fdd88e7-8614-45e8-9b32-21be6f8f4361",
+      "id": "1bc7c560-6739-423b-a3ab-ea065699dc6d",
       "key": "URL",
       "value": "http://localhost:3000"
     }

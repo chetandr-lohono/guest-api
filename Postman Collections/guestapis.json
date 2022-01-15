@@ -915,7 +915,7 @@
                 {
                   "key": "response_type",
                   "value": "full",
-                  "description": "[\"minimal\", \"full\"] are valid values"
+                  "description": "minimal, full"
                 }
               ]
             }
@@ -1801,7 +1801,7 @@
   ],
   "variable": [
     {
-      "id": "af25e34e-2ca3-427c-8040-75c8a1f656d6",
+      "id": "7e1b1baa-f047-4fc0-8161-8714d4ef443f",
       "key": "URL",
       "value": "http://localhost:3000"
     }

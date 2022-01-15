@@ -775,6 +775,37 @@
             }
           },
           "response": []
+        },
+        {
+          "name": "propertyDetail Copy",
+          "id": "f2ae5fba-cd75-4106-83a5-33fc614e1d87",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{URL}}/v2/partner_properties/villa-abiente",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "v2",
+                "partner_properties",
+                "villa-abiente"
+              ],
+              "query": [
+                {
+                  "key": "trending",
+                  "value": "false",
+                  "description": "[Optional]",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
         }
       ],
       "id": "06bf5c9d-85b4-4663-a029-fb71705ceb5b"
@@ -1833,7 +1864,7 @@
   ],
   "variable": [
     {
-      "id": "f8367b6e-df60-4860-ba54-aafa14600983",
+      "id": "77ef612c-9372-424c-9e15-6b4ef87e33f5",
       "key": "URL",
       "value": "http://localhost:3000"
     }

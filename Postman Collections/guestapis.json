@@ -608,7 +608,39 @@
           "request": {
             "method": "GET",
             "header": [],
-            "url": "{{URL}}/v2/properties/monforte-vaddo-d"
+            "url": {
+              "raw": "{{URL}}/v2/properties/monforte-vaddo-f?&adults=8&children=4&check_in=2022-01-26&check_out=2022-01-30",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "v2",
+                "properties",
+                "monforte-vaddo-f"
+              ],
+              "query": [
+                {
+                  "key": null,
+                  "value": null
+                },
+                {
+                  "key": "adults",
+                  "value": "8"
+                },
+                {
+                  "key": "children",
+                  "value": "4"
+                },
+                {
+                  "key": "check_in",
+                  "value": "2022-01-26"
+                },
+                {
+                  "key": "check_out",
+                  "value": "2022-01-30"
+                }
+              ]
+            }
           },
           "response": []
         },
@@ -1801,7 +1833,7 @@
   ],
   "variable": [
     {
-      "id": "7e1b1baa-f047-4fc0-8161-8714d4ef443f",
+      "id": "b85482b8-cfd6-48a1-b367-94ed8bed4c2c",
       "key": "URL",
       "value": "http://localhost:3000"
     }

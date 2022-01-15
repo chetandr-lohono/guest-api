@@ -786,14 +786,15 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{URL}}/v2/partner_properties/villa-abiente",
+              "raw": "{{URL}}/v2/partner_properties/villa-abiente/similar",
               "host": [
                 "{{URL}}"
               ],
               "path": [
                 "v2",
                 "partner_properties",
-                "villa-abiente"
+                "villa-abiente",
+                "similar"
               ],
               "query": [
                 {
@@ -1864,7 +1865,7 @@
   ],
   "variable": [
     {
-      "id": "a039fd53-2ae1-4153-a530-3a79bd1b8be3",
+      "id": "f4fc9da8-9f6c-405e-8f8d-63ed84f52820",
       "key": "URL",
       "value": "http://localhost:3000"
     }

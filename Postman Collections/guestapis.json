@@ -777,7 +777,7 @@
           "response": []
         },
         {
-          "name": "propertyDetail Copy",
+          "name": "Propertylist Similar",
           "id": "f2ae5fba-cd75-4106-83a5-33fc614e1d87",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -1864,7 +1864,7 @@
   ],
   "variable": [
     {
-      "id": "8ce8b659-2e63-4634-90d6-642a34ae5417",
+      "id": "a039fd53-2ae1-4153-a530-3a79bd1b8be3",
       "key": "URL",
       "value": "http://localhost:3000"
     }

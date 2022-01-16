@@ -1655,7 +1655,7 @@
           "id": "7996dbe9-4205-421f-8889-cf095c0b5d4a"
         },
         {
-          "name": "Booking Create",
+          "name": "Booking Create - Step 1",
           "event": [
             {
               "listen": "test",
@@ -1865,7 +1865,7 @@
   ],
   "variable": [
     {
-      "id": "f4fc9da8-9f6c-405e-8f8d-63ed84f52820",
+      "id": "35ffb158-53bd-4ef1-920f-ae8fdcda4bf6",
       "key": "URL",
       "value": "http://localhost:3000"
     }

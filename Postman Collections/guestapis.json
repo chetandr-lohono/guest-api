@@ -1841,7 +1841,7 @@
       "id": "65fcf1d9-59a8-4c0e-a69e-3c17d75a1caa"
     },
     {
-      "name": "New Folder",
+      "name": "FCM Token",
       "item": [],
       "id": "7d1dca9b-6b34-4411-9d58-508b112ed74f"
     }
@@ -1870,7 +1870,7 @@
   ],
   "variable": [
     {
-      "id": "b4fabd86-b7b8-4dc6-ad25-c521c419cb52",
+      "id": "b1b91041-6281-4510-80a0-ca15446d0f5a",
       "key": "URL",
       "value": "http://localhost:3000"
     }

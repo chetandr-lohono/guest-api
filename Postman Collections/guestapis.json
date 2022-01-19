@@ -1850,9 +1850,24 @@
             "disableBodyPruning": true
           },
           "request": {
-            "method": "GET",
-            "header": [],
-            "url": null
+            "method": "POST",
+            "header": [
+              {
+                "key": "session",
+                "value": "{{session-id}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"token\": \"...\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{URL}}/api/v2/device"
           },
           "response": []
         }
@@ -1884,7 +1899,7 @@
   ],
   "variable": [
     {
-      "id": "959d283c-e0b8-46f9-8c27-057e218d47e4",
+      "id": "57ae4cea-9d62-48a5-a6b7-7885a7ed6065",
       "key": "URL",
       "value": "http://localhost:3000"
     }

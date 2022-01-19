@@ -1844,7 +1844,7 @@
       "name": "FCM Token",
       "item": [
         {
-          "name": "New Request",
+          "name": "Add token",
           "id": "d5977b56-7380-4b73-89d4-0f9226ab1093",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -1884,7 +1884,7 @@
   ],
   "variable": [
     {
-      "id": "e1d2c741-2274-4089-830b-71abfe599bd8",
+      "id": "959d283c-e0b8-46f9-8c27-057e218d47e4",
       "key": "URL",
       "value": "http://localhost:3000"
     }

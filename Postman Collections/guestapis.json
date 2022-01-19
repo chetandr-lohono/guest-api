@@ -1842,7 +1842,21 @@
     },
     {
       "name": "FCM Token",
-      "item": [],
+      "item": [
+        {
+          "name": "New Request",
+          "id": "d5977b56-7380-4b73-89d4-0f9226ab1093",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": null
+          },
+          "response": []
+        }
+      ],
       "id": "7d1dca9b-6b34-4411-9d58-508b112ed74f"
     }
   ],
@@ -1870,7 +1884,7 @@
   ],
   "variable": [
     {
-      "id": "b1b91041-6281-4510-80a0-ca15446d0f5a",
+      "id": "809c3e14-50ab-4cde-875f-607768151afa",
       "key": "URL",
       "value": "http://localhost:3000"
     }

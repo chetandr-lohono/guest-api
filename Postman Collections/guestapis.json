@@ -987,7 +987,7 @@
           "response": []
         },
         {
-          "name": "Reservations",
+          "name": "Reservations list",
           "event": [
             {
               "listen": "test",
@@ -2031,7 +2031,7 @@
   ],
   "variable": [
     {
-      "id": "ec614691-3b99-40cc-a0df-ae988dc3c5e3",
+      "id": "2949ffcc-c69c-42e3-a931-2e49aa2cd7fe",
       "key": "URL",
       "value": "http://localhost:3000"
     }

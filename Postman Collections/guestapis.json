@@ -1898,7 +1898,21 @@
     },
     {
       "name": "Coupon",
-      "item": [],
+      "item": [
+        {
+          "name": "New Request",
+          "id": "bf4ea616-7038-4edf-8ed0-ea13519131c4",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": null
+          },
+          "response": []
+        }
+      ],
       "id": "394d2bf8-5a37-4510-88fa-17e11b4297a9"
     }
   ],
@@ -1926,7 +1940,7 @@
   ],
   "variable": [
     {
-      "id": "29f44878-0b04-414a-85f1-161bd31dcc5c",
+      "id": "a30431fb-62ec-4e48-8a28-afe5d946c9fd",
       "key": "URL",
       "value": "http://localhost:3000"
     }

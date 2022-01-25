@@ -1757,7 +1757,23 @@
                 }
               }
             },
-            "url": "{{URL}}/v2/booking"
+            "url": {
+              "raw": "{{URL}}/v2/booking/:booking_slug",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "v2",
+                "booking",
+                ":booking_slug"
+              ],
+              "variable": [
+                {
+                  "key": "booking_slug",
+                  "value": null
+                }
+              ]
+            }
           },
           "response": []
         }
@@ -1940,7 +1956,7 @@
   ],
   "variable": [
     {
-      "id": "e58670bb-7975-49fc-8f7c-9165fe7fe330",
+      "id": "153c4634-172c-4c7a-a0be-ea5aaf4d2f87",
       "key": "URL",
       "value": "http://localhost:3000"
     }

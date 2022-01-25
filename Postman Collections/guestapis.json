@@ -1757,7 +1757,23 @@
                 }
               }
             },
-            "url": "{{URL}}/v2/booking"
+            "url": {
+              "raw": "{{URL}}/v2/booking/:booking_slug",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "v2",
+                "booking",
+                ":booking_slug"
+              ],
+              "variable": [
+                {
+                  "key": "booking_slug",
+                  "value": null
+                }
+              ]
+            }
           },
           "response": []
         }
@@ -1897,8 +1913,48 @@
       "id": "7d1dca9b-6b34-4411-9d58-508b112ed74f"
     },
     {
-      "name": "New Folder",
-      "item": [],
+      "name": "Coupon",
+      "item": [
+        {
+          "name": "Add coupon",
+          "id": "bf4ea616-7038-4edf-8ed0-ea13519131c4",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"coupon_code\": \"...\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{URL}}/v2/booking/:booking_slug/coupon",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "v2",
+                "booking",
+                ":booking_slug",
+                "coupon"
+              ],
+              "variable": [
+                {
+                  "key": "booking_slug",
+                  "value": null
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
       "id": "394d2bf8-5a37-4510-88fa-17e11b4297a9"
     }
   ],
@@ -1926,7 +1982,7 @@
   ],
   "variable": [
     {
-      "id": "aca2419e-0865-4dd9-8666-46a4180ecc16",
+      "id": "bfe6a9b7-5a2f-4096-b5c9-d465e47ed2e0",
       "key": "URL",
       "value": "http://localhost:3000"
     }

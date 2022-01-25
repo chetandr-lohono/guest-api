@@ -1036,7 +1036,7 @@
           "response": []
         },
         {
-          "name": "Reservation delete",
+          "name": "Trips Delete",
           "event": [
             {
               "listen": "test",
@@ -1096,6 +1096,25 @@
               }
             ],
             "url": "{{URL}}/v2/user/trips/BCBA6E5A"
+          },
+          "response": []
+        },
+        {
+          "name": "Trips Details",
+          "id": "f2e3deb2-60fe-414a-a560-5e24580810cf",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "session",
+                "value": "{{session-id}}",
+                "type": "text"
+              }
+            ],
+            "url": "{{URL}}/v2/user/trips/BB37288A"
           },
           "response": []
         },
@@ -2064,7 +2083,7 @@
   ],
   "variable": [
     {
-      "id": "34984419-471d-41af-b968-b5d3e5bd9183",
+      "id": "f412bdb7-6de2-42e7-91a4-f97d6242e41b",
       "key": "URL",
       "value": "http://localhost:3000"
     }

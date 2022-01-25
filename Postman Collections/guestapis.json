@@ -987,7 +987,7 @@
           "response": []
         },
         {
-          "name": "Trips",
+          "name": "Reservations",
           "event": [
             {
               "listen": "test",
@@ -2018,7 +2018,7 @@
   ],
   "variable": [
     {
-      "id": "77daa6e7-84dc-42fc-9dfa-8f772ac7602b",
+      "id": "99e53bb3-dff6-4625-a90b-6fcc293b8498",
       "key": "URL",
       "value": "http://localhost:3000"
     }

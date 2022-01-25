@@ -987,7 +987,7 @@
           "response": []
         },
         {
-          "name": "Reservations list",
+          "name": "Trips",
           "event": [
             {
               "listen": "test",
@@ -1015,14 +1015,14 @@
               }
             ],
             "url": {
-              "raw": "{{URL}}/v2/user/reservations?status=pending",
+              "raw": "{{URL}}/v2/user/trips?status=pending",
               "host": [
                 "{{URL}}"
               ],
               "path": [
                 "v2",
                 "user",
-                "reservations"
+                "trips"
               ],
               "query": [
                 {
@@ -1115,19 +1115,6 @@
               }
             ],
             "url": "{{URL}}/v2/user/trips/BB37288A"
-          },
-          "response": []
-        },
-        {
-          "name": "Get Reservation",
-          "id": "10d4b2c7-55a5-49ea-8f70-ffe2b8f63ce4",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "method": "GET",
-            "header": [],
-            "url": null
           },
           "response": []
         }
@@ -1968,7 +1955,7 @@
           "response": []
         },
         {
-          "name": "Remove coupon",
+          "name": "New Request",
           "id": "674cfc81-2b97-4693-9a05-3667ffb0cd58",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -2031,7 +2018,7 @@
   ],
   "variable": [
     {
-      "id": "2949ffcc-c69c-42e3-a931-2e49aa2cd7fe",
+      "id": "fb61bae1-9842-4f59-9101-3ccc316cc0ed",
       "key": "URL",
       "value": "http://localhost:3000"
     }

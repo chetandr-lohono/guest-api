@@ -1900,7 +1900,7 @@
       "name": "Coupon",
       "item": [
         {
-          "name": "New Request",
+          "name": "Add coupon",
           "id": "bf4ea616-7038-4edf-8ed0-ea13519131c4",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -1940,7 +1940,7 @@
   ],
   "variable": [
     {
-      "id": "67699426-765b-4496-a3f0-b1eb1708880d",
+      "id": "e58670bb-7975-49fc-8f7c-9165fe7fe330",
       "key": "URL",
       "value": "http://localhost:3000"
     }

@@ -1738,28 +1738,6 @@
             "url": "{{URL}}/v2/booking/confirm"
           },
           "response": []
-        },
-        {
-          "name": "Patch booking - Step 2",
-          "id": "137988e2-9565-4df1-b299-bb5410177936",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "method": "PATCH",
-            "header": [],
-            "body": {
-              "mode": "raw",
-              "raw": "{\n    \"name\": \"...\",\n    \"email\": \"...\",\n    \"mobile\": \"...\",\n    \"country_code\": \"...\"\n}",
-              "options": {
-                "raw": {
-                  "language": "json"
-                }
-              }
-            },
-            "url": "{{URL}}/v2/booking"
-          },
-          "response": []
         }
       ],
       "id": "9282c10b-6eb6-438f-8209-d904bb7178a3"
@@ -1921,7 +1899,7 @@
   ],
   "variable": [
     {
-      "id": "2f71b64e-b7e5-43fc-ac1c-810d4cb815b1",
+      "id": "107bdb74-5061-420e-8ce2-5782a484fc05",
       "key": "URL",
       "value": "http://localhost:3000"
     }

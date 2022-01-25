@@ -1036,7 +1036,7 @@
           "response": []
         },
         {
-          "name": "Trips Delete",
+          "name": "Reservation delete",
           "event": [
             {
               "listen": "test",
@@ -2064,7 +2064,7 @@
   ],
   "variable": [
     {
-      "id": "32946017-7afc-4018-af9c-0ab3fc670fe4",
+      "id": "34984419-471d-41af-b968-b5d3e5bd9183",
       "key": "URL",
       "value": "http://localhost:3000"
     }

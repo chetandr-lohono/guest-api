@@ -1015,14 +1015,14 @@
               }
             ],
             "url": {
-              "raw": "{{URL}}/v2/user/trips?status=pending",
+              "raw": "{{URL}}/v2/user/reservations?status=pending",
               "host": [
                 "{{URL}}"
               ],
               "path": [
                 "v2",
                 "user",
-                "trips"
+                "reservations"
               ],
               "query": [
                 {
@@ -1955,15 +1955,38 @@
           "response": []
         },
         {
-          "name": "New Request",
+          "name": "Remove coupon",
           "id": "674cfc81-2b97-4693-9a05-3667ffb0cd58",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
           "request": {
-            "method": "GET",
+            "method": "DELETE",
             "header": [],
-            "url": null
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "/v2/booking/:booking_slug/coupon",
+              "path": [
+                "v2",
+                "booking",
+                ":booking_slug",
+                "coupon"
+              ],
+              "variable": [
+                {
+                  "key": "booking_slug",
+                  "value": null
+                }
+              ]
+            }
           },
           "response": []
         }
@@ -1995,7 +2018,7 @@
   ],
   "variable": [
     {
-      "id": "a6b4b5ad-0717-4a38-ab3f-1b042290a924",
+      "id": "77daa6e7-84dc-42fc-9dfa-8f772ac7602b",
       "key": "URL",
       "value": "http://localhost:3000"
     }

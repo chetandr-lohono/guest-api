@@ -1738,6 +1738,28 @@
             "url": "{{URL}}/v2/booking/confirm"
           },
           "response": []
+        },
+        {
+          "name": "Patch booking",
+          "id": "137988e2-9565-4df1-b299-bb5410177936",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\": \"...\",\n    \"email\": \"...\",\n    \"mobile\": \"...\",\n    \"country_code\": \"...\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{URL}}/v2/booking"
+          },
+          "response": []
         }
       ],
       "id": "9282c10b-6eb6-438f-8209-d904bb7178a3"
@@ -1899,7 +1921,7 @@
   ],
   "variable": [
     {
-      "id": "b08eb6ea-31ea-4337-ae7c-82cd246ffaa9",
+      "id": "bbbacef5-6e5e-47f5-ac17-6de3c5d97393",
       "key": "URL",
       "value": "http://localhost:3000"
     }

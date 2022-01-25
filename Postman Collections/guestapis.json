@@ -1897,7 +1897,7 @@
       "id": "7d1dca9b-6b34-4411-9d58-508b112ed74f"
     },
     {
-      "name": "New Folder",
+      "name": "Coupon",
       "item": [],
       "id": "394d2bf8-5a37-4510-88fa-17e11b4297a9"
     }
@@ -1926,7 +1926,7 @@
   ],
   "variable": [
     {
-      "id": "7d74bc5d-f341-478a-8d57-a6080469cf1e",
+      "id": "29f44878-0b04-414a-85f1-161bd31dcc5c",
       "key": "URL",
       "value": "http://localhost:3000"
     }

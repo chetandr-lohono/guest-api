@@ -1129,22 +1129,7 @@
             "header": [],
             "url": null
           },
-          "response": [
-            {
-              "id": "1784860f-80fa-479a-9774-b3722fd3443f",
-              "name": "New Request",
-              "originalRequest": {
-                "method": "GET",
-                "header": [],
-                "url": null
-              },
-              "_postman_previewlanguage": null,
-              "header": null,
-              "cookie": [],
-              "responseTime": null,
-              "body": null
-            }
-          ]
+          "response": []
         }
       ],
       "id": "f2e9ee9c-6465-469a-9ba4-c14742ba377a"
@@ -2046,7 +2031,7 @@
   ],
   "variable": [
     {
-      "id": "17e1e5f9-5624-4a61-a2b5-40b9953c871e",
+      "id": "98fcf2a3-d956-4929-b396-5238e1f9f470",
       "key": "URL",
       "value": "http://localhost:3000"
     }

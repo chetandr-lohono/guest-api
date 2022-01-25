@@ -1684,7 +1684,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n    \"property_slug\" : \"monforte-vaddo-f\",\n    \"name\" : \"Chetan Rane\",\n    \"billing_email\" : \"chetan.d.rane@gmail.com\",\n    \"country_code\" : \"91\",\n    \"billing_mobile\" : \"9999999991\",\n    \"check_in\" : \"2022/01/08\",\n    \"check_out\": \"2022/01/09\",\n    \"adults\" : 2,\n    \"children\" : 2,\n    \"customer_note\":\"This Note is special\",\n    \"coupon_code\":\"\",\n    \"meta\" :{},\n    \"gift_cards\":\"\",\n    \"brand_id\": \"\",\n    \"property_config_id\":\"\"\n}",
+              "raw": "{\n    \"property_slug\" : \"monforte-vaddo-f\",\n    \"check_in\" : \"2022-01-08\",\n    \"check_out\": \"2022-01-09\",\n    \"adults\" : 2,\n    \"children\" : 0,\n    \"customer_note\":\"This Note is special\",\n    \"meta\" :{},\n    \"brand_id\": \"\",\n    \"source\": \"\",\n    \"property_config_id\":\"\"\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -1899,7 +1899,7 @@
   ],
   "variable": [
     {
-      "id": "57ae4cea-9d62-48a5-a6b7-7885a7ed6065",
+      "id": "b08eb6ea-31ea-4337-ae7c-82cd246ffaa9",
       "key": "URL",
       "value": "http://localhost:3000"
     }

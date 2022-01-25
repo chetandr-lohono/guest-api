@@ -987,7 +987,7 @@
           "response": []
         },
         {
-          "name": "Trips",
+          "name": "Reservations list",
           "event": [
             {
               "listen": "test",
@@ -1015,14 +1015,14 @@
               }
             ],
             "url": {
-              "raw": "{{URL}}/v2/user/trips?status=pending",
+              "raw": "{{URL}}/v2/user/reservations?status=pending",
               "host": [
                 "{{URL}}"
               ],
               "path": [
                 "v2",
                 "user",
-                "trips"
+                "reservations"
               ],
               "query": [
                 {
@@ -1115,6 +1115,36 @@
               }
             ],
             "url": "{{URL}}/v2/user/trips/BB37288A"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Reservation",
+          "id": "10d4b2c7-55a5-49ea-8f70-ffe2b8f63ce4",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{URL}}/v2/user/reservations/:slug",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "v2",
+                "user",
+                "reservations",
+                ":slug"
+              ],
+              "variable": [
+                {
+                  "key": "slug",
+                  "value": null
+                }
+              ]
+            }
           },
           "response": []
         }
@@ -2018,7 +2048,7 @@
   ],
   "variable": [
     {
-      "id": "a532ab1c-6814-4f41-a260-11640413549e",
+      "id": "0e6117dd-5147-4983-bba9-4acdc78856cb",
       "key": "URL",
       "value": "http://localhost:3000"
     }

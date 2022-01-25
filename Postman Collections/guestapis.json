@@ -1117,6 +1117,19 @@
             "url": "{{URL}}/v2/user/trips/BB37288A"
           },
           "response": []
+        },
+        {
+          "name": "New Request",
+          "id": "10d4b2c7-55a5-49ea-8f70-ffe2b8f63ce4",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": null
+          },
+          "response": []
         }
       ],
       "id": "f2e9ee9c-6465-469a-9ba4-c14742ba377a"
@@ -2018,7 +2031,7 @@
   ],
   "variable": [
     {
-      "id": "99e53bb3-dff6-4625-a90b-6fcc293b8498",
+      "id": "0fafac81-19df-4d0b-9d49-d99947434a31",
       "key": "URL",
       "value": "http://localhost:3000"
     }

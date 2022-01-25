@@ -1149,7 +1149,7 @@
           "response": []
         },
         {
-          "name": "New Request",
+          "name": "Send OTP",
           "id": "cc90c5f3-6d12-482b-be3b-86800debf0d8",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -2061,7 +2061,7 @@
   ],
   "variable": [
     {
-      "id": "9bb909f8-77c3-4d72-8c22-a842031adcd6",
+      "id": "efd5c5a2-d082-4b7f-89d8-f8bddd2a3e24",
       "key": "URL",
       "value": "http://localhost:3000"
     }

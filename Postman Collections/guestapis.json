@@ -1168,9 +1168,18 @@
             "disableBodyPruning": true
           },
           "request": {
-            "method": "GET",
+            "method": "POST",
             "header": [],
-            "url": null
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"otp\": \"...\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{URL}}/v2/user/verify_otp"
           },
           "response": []
         }
@@ -2074,7 +2083,7 @@
   ],
   "variable": [
     {
-      "id": "2460ad14-a684-4a43-a890-2eedaa571377",
+      "id": "9d424241-98db-4b2a-ac39-a6891156c293",
       "key": "URL",
       "value": "http://localhost:3000"
     }

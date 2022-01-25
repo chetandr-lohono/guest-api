@@ -1740,7 +1740,7 @@
           "response": []
         },
         {
-          "name": "Patch booking",
+          "name": "Patch booking - Step 2",
           "id": "137988e2-9565-4df1-b299-bb5410177936",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -1921,7 +1921,7 @@
   ],
   "variable": [
     {
-      "id": "9c545659-570f-414a-836e-86eb46479434",
+      "id": "2f71b64e-b7e5-43fc-ac1c-810d4cb815b1",
       "key": "URL",
       "value": "http://localhost:3000"
     }

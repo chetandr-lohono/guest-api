@@ -1119,7 +1119,7 @@
           "response": []
         },
         {
-          "name": "New Request",
+          "name": "Get Reservation",
           "id": "10d4b2c7-55a5-49ea-8f70-ffe2b8f63ce4",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -2031,7 +2031,7 @@
   ],
   "variable": [
     {
-      "id": "d38d853c-17b0-48de-bbbb-a170aaa17c72",
+      "id": "ec614691-3b99-40cc-a0df-ae988dc3c5e3",
       "key": "URL",
       "value": "http://localhost:3000"
     }

@@ -1160,6 +1160,19 @@
             "url": null
           },
           "response": []
+        },
+        {
+          "name": "New Request",
+          "id": "1d993826-b109-4833-b2a7-0dc41bec3a65",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": null
+          },
+          "response": []
         }
       ],
       "id": "f2e9ee9c-6465-469a-9ba4-c14742ba377a"
@@ -2061,7 +2074,7 @@
   ],
   "variable": [
     {
-      "id": "efd5c5a2-d082-4b7f-89d8-f8bddd2a3e24",
+      "id": "c5a450d0-e886-4830-95be-8dbcfeee38cf",
       "key": "URL",
       "value": "http://localhost:3000"
     }

@@ -1100,25 +1100,6 @@
           "response": []
         },
         {
-          "name": "Trips Details",
-          "id": "f2e3deb2-60fe-414a-a560-5e24580810cf",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "method": "GET",
-            "header": [
-              {
-                "key": "session",
-                "value": "{{session-id}}",
-                "type": "text"
-              }
-            ],
-            "url": "{{URL}}/v2/user/trips/BB37288A"
-          },
-          "response": []
-        },
-        {
           "name": "Get Reservation",
           "id": "10d4b2c7-55a5-49ea-8f70-ffe2b8f63ce4",
           "protocolProfileBehavior": {
@@ -1155,9 +1136,9 @@
             "disableBodyPruning": true
           },
           "request": {
-            "method": "GET",
+            "method": "POST",
             "header": [],
-            "url": null
+            "url": "{{URL}}/v2/user/send_otp"
           },
           "response": []
         },
@@ -2083,7 +2064,7 @@
   ],
   "variable": [
     {
-      "id": "9d424241-98db-4b2a-ac39-a6891156c293",
+      "id": "5676fd81-7c53-4898-a2d7-2d7cc9f2f83c",
       "key": "URL",
       "value": "http://localhost:3000"
     }

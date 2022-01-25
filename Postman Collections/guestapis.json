@@ -1163,6 +1163,19 @@
             "url": "{{URL}}/v2/user/verify_otp"
           },
           "response": []
+        },
+        {
+          "name": "New Request",
+          "id": "5c0288b4-e362-4823-b131-f6defb860145",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": null
+          },
+          "response": []
         }
       ],
       "id": "f2e9ee9c-6465-469a-9ba4-c14742ba377a"
@@ -2064,7 +2077,7 @@
   ],
   "variable": [
     {
-      "id": "644f00f8-30fb-42be-b2cd-108a99908b83",
+      "id": "1389586f-96a0-4d50-b8c0-1dae6a9caa9a",
       "key": "URL",
       "value": "http://localhost:3000"
     }

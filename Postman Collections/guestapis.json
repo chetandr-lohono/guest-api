@@ -1871,7 +1871,8 @@
             "header": [
               {
                 "key": "Cookie",
-                "value": "_isprava_api_session=hOgiakkbouSVPqsdIj7EAez%2B96d%2BisutQansliZrgWpMFv4osbIX%2FQQtyt%2BGk6SMeFQhFhdV9G7zeFCi2Ek90W0p89zHuLicOjWrrlDf%2FzpaNM9WLw%2F%2F4LGkbnE6fZuZgWy2iiOiUYYDspZj6%2BOtJ9Tl4tn3t8%2FN8Jg3AvTUadNZa8ep8Ihx5WXpAF40RuDf86fpH8eaL9m%2BaYhbLQ3aI9b%2BCeTFRDvFr4yuNqBdw0ZE5U6SGl2TR1vACYKW4CU0HDjleDV%2F%2Bllz%2FYzoP0EWNvlng2YyxKCdUTLDUj%2F5Nq1VKOjcbrrAVQMGfJ5L2e3mt1l%2BzQ0XVrfyfy62mRQGFRGEW4KFdEANh%2F3W8g%2Ff%2BuqL2sEiAry%2FE%2FZG4jkz88ASegmj6wf0hTr9NdEYKEe2opH40CT1O%2FJEem4kkjnNj4rRGYE4gL8%3D--Cq8MPq%2FlYdiz4lc6--RzTUpe0xmiNVu00UPD3FNg%3D%3D"
+                "value": "_isprava_api_session=hOgiakkbouSVPqsdIj7EAez%2B96d%2BisutQansliZrgWpMFv4osbIX%2FQQtyt%2BGk6SMeFQhFhdV9G7zeFCi2Ek90W0p89zHuLicOjWrrlDf%2FzpaNM9WLw%2F%2F4LGkbnE6fZuZgWy2iiOiUYYDspZj6%2BOtJ9Tl4tn3t8%2FN8Jg3AvTUadNZa8ep8Ihx5WXpAF40RuDf86fpH8eaL9m%2BaYhbLQ3aI9b%2BCeTFRDvFr4yuNqBdw0ZE5U6SGl2TR1vACYKW4CU0HDjleDV%2F%2Bllz%2FYzoP0EWNvlng2YyxKCdUTLDUj%2F5Nq1VKOjcbrrAVQMGfJ5L2e3mt1l%2BzQ0XVrfyfy62mRQGFRGEW4KFdEANh%2F3W8g%2Ff%2BuqL2sEiAry%2FE%2FZG4jkz88ASegmj6wf0hTr9NdEYKEe2opH40CT1O%2FJEem4kkjnNj4rRGYE4gL8%3D--Cq8MPq%2FlYdiz4lc6--RzTUpe0xmiNVu00UPD3FNg%3D%3D",
+                "disabled": true
               }
             ],
             "url": "https://api-staging.lohono.com/v2/feedbacks/{slug}"
@@ -2095,7 +2096,7 @@
   ],
   "variable": [
     {
-      "id": "af32697e-fbd7-44fa-b6a4-e0dd1a73236a",
+      "id": "689232b7-3be4-4793-96d8-a2ef269ed4a3",
       "key": "URL",
       "value": "http://localhost:3000"
     }

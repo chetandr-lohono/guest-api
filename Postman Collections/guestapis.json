@@ -1563,7 +1563,7 @@
                     }
                   ]
                 },
-                "url": "{{domain}}/api/v2/rental/opportunities/{opportunity_id}/guests/{id}"
+                "url": "{{URL}}/api/v2/rental/opportunities/{opportunity_id}/guests/{id}"
               },
               "response": []
             },
@@ -2100,7 +2100,7 @@
   ],
   "variable": [
     {
-      "id": "d96b5d7d-059c-4076-9189-59978361c999",
+      "id": "623193bb-8320-4427-99c8-bee748a0ea24",
       "key": "URL",
       "value": "https://uat-api.lohono.com"
     }

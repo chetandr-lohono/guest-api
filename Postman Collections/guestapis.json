@@ -2052,7 +2052,10 @@
               }
             },
             "url": {
-              "raw": "/v2/booking/:booking_slug/coupon",
+              "raw": "{{URL}}/v2/booking/:booking_slug/coupon",
+              "host": [
+                "{{URL}}"
+              ],
               "path": [
                 "v2",
                 "booking",
@@ -2097,7 +2100,7 @@
   ],
   "variable": [
     {
-      "id": "e5188245-7975-48a3-b046-41f53c2d52c4",
+      "id": "bfac5d9b-fd00-41d9-ab56-1439f3487751",
       "key": "URL",
       "value": "https://uat-api.lohono.com"
     }

@@ -2077,29 +2077,29 @@
     {
       "listen": "prerequest",
       "script": {
+        "id": "ea2e51cf-25e6-4cf7-aee4-57988dd79a76",
         "type": "text/javascript",
         "exec": [
           ""
-        ],
-        "id": "1ee367bc-6ee2-4211-a53d-124c76f4bfb5"
+        ]
       }
     },
     {
       "listen": "test",
       "script": {
+        "id": "38eaf571-322e-4ee1-b904-777427ccb584",
         "type": "text/javascript",
         "exec": [
           ""
-        ],
-        "id": "45eef0c5-48c6-45e1-9cd4-22ad80074128"
+        ]
       }
     }
   ],
   "variable": [
     {
-      "id": "4ce88aac-070d-4de0-b7b1-8f13204f4ecc",
+      "id": "cf078563-5e38-4e75-80e8-388245a276af",
       "key": "URL",
-      "value": "http://localhost:3000"
+      "value": "https://uat-api.lohono.com"
     }
   ]
 }

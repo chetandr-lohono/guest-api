@@ -1999,7 +1999,7 @@
             "disableBodyPruning": true
           },
           "request": {
-            "method": "POST",
+            "method": "PATCH",
             "header": [],
             "body": {
               "mode": "raw",
@@ -2095,7 +2095,7 @@
   ],
   "variable": [
     {
-      "id": "34c0a5ff-8c06-47ca-a573-310e4255df0c",
+      "id": "af32697e-fbd7-44fa-b6a4-e0dd1a73236a",
       "key": "URL",
       "value": "http://localhost:3000"
     }

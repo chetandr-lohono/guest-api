@@ -1875,7 +1875,7 @@
                 "disabled": true
               }
             ],
-            "url": "https://api-staging.lohono.com/v2/feedbacks/{slug}"
+            "url": "https://{{URL}}/v2/feedbacks/{slug}"
           },
           "response": []
         },
@@ -2097,7 +2097,7 @@
   ],
   "variable": [
     {
-      "id": "cf078563-5e38-4e75-80e8-388245a276af",
+      "id": "def85806-b8a2-4b83-9608-e3ad81109dfc",
       "key": "URL",
       "value": "https://uat-api.lohono.com"
     }
